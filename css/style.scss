@@ -1,0 +1,164 @@
+// =================================== NAVBAR Stylization =========================================
+#navbar-example2 {
+    position: fixed;
+    // width: 80%;
+    z-index: 100;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.377);
+    padding: 0px;
+    width: 100%;
+    transition: all .5s;
+    height: 77px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.582);
+    padding: 0px;
+    border-radius: 30px 30px 0 0;
+
+}
+
+.navbar-brand {
+    color: gold !important;
+    font-weight: bold;
+    font-family: 'Nerko One', cursive;
+    text-transform: uppercase;
+
+
+    img {
+        width: 30px;
+        height: 40px;
+    }
+
+    .brandt1 {
+        color: blue;
+    }
+
+    .brandt2 {
+        color: yellow;
+    }
+
+    .brandt3 {
+        color: red;
+    }
+}
+
+//-------------------------------------------- scroll animation -----------------------
+.navbar-scrolled {
+    background-color: #212529;
+    transition: all .5s;
+    // max-width: 80%;
+    border-radius: 0 0 30px 30px;
+    height: 66px;
+}
+
+//------------------------------------------------------------------------------------
+
+.nav-link {
+    color: gold !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    // text-transform: uppercase;
+    font-weight: bold;
+}
+
+.nav-link.active {
+    background-color: rgba(218, 165, 32, 0.63) !important;
+    
+
+}
+
+// ----------------------------------Translatio Dropdown ------------------------------------
+.nav-item  {
+    list-style-type: none;
+
+}
+
+// ------------------------------------------------------------------------------------------
+
+.carousel-img {
+    width: 100%;
+    height: auto;
+}
+
+
+// ==============================================================================================
+//======================== Sections Stylization ==================================================
+.section1,
+.section3,
+.section5 {
+    background-color: #EFEFEF;
+}
+
+.section2,
+.section4 {
+    background-color: white;
+}
+
+.section1,
+.section2,
+.section3,
+.section4,
+.section5 {
+    padding: 6% 7%;
+
+}
+
+//------------------------------Accordion Stylization------------------------
+
+.videoInsert {
+    width: 893px;
+    height: 480px;
+}
+
+// .flexible-container {
+//     position: relative;
+//     padding-bottom: 56.25%;
+//     padding-top: 30px;
+//     height: 0;
+//     overflow: hidden;
+//   }
+
+//   .flexible-container iframe,
+//   .flexible-container object,
+//   .flexible-container embed {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//   }
+
+//--------------------------------------------------------------------------- 
+// ===============================================================================================
+
+@media only screen and (max-width: 768px) {
+
+    /* For mobile phones: */
+    .navbar {
+        background-color: #212529;
+        height: auto;
+    }
+
+    .videoInsert {
+        width: 370px;
+        height: 240px;
+    }
+
+    .nav-pills {
+        text-align: center;
+        width: 100px;
+        position: static;
+
+        .nav-item {
+            padding: 5px 0;
+        }
+    }
+
+    .carousel {
+        margin-top: 56px;
+    }
+
+
+}
