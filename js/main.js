@@ -49,6 +49,11 @@ var language = {
             "SectionTitle2": "Turul lumii",
 
         },
+        {//footer section 
+            "footercitate": "Noi, cei ieșiți din popor, care am crescut legănati de aceste cân- tece, suntem datori a le păstra cu sfințenia cu care se păstrează moştenirea venită de la o națiune întreagă, trebuie să veghem lângă această comoară, căci ea fiind a poporului este şi a noastră. este a întregii suflări românești; şi apoi - cine nu păstrează ce are, nu-i vrednic să aibă nimic.",
+            "usefullinks": "Linkuri utile",
+
+        },
     ]
 }
 
@@ -61,7 +66,10 @@ if (window.location.hash) {
         tour.textContent = language.ro[0].tour;
         // about us section
         SectionTitle1.textContent = language.ro[1].SectionTitle1;
-        SectionTitle1.textContent = language.ro[1].SectionTitle2;
+        SectionTitle2.textContent = language.ro[1].SectionTitle2;
+        // footer section
+        footercitate.textContent = language.ro[2].footercitate;
+        usefullinks.textContent = language.ro[2].usefullinks;
 
 
     }
