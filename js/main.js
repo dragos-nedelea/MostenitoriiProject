@@ -9,6 +9,19 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// =============================== Text apprearance animation ============================
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        } else {
+            entry.target.classList.remove('show');
+        }
+    });
+});
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
+
 // ================================= Translation ========================================
 // define language reload anchors
 var dataReload = document.querySelectorAll("[data-reload]");
@@ -21,7 +34,7 @@ var language = {
             "home": "Home",
             "about": "About Us",
             "tour": "Our World Tour"
-        }, 
+        },
 
     ],
     ro: [
@@ -34,7 +47,7 @@ var language = {
         {//about us section 
             "SectionTitle1": "Despre noi",
             "SectionTitle2": "Turul lumii",
-            
+
         },
     ]
 }
