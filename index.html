@@ -58,8 +58,8 @@
                     </ul>
 
                     <ul class="nav-item dropdown ms-auto">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" 
+                            aria-expanded="false"><span id="langshow">ENG</span> 
                             <i class="bi bi-globe-europe-africa"></i>
                         </a>
                         <ul class="dropdown-menu">
@@ -84,29 +84,58 @@
                             aria-label="Slide 2"></button>
                         <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2"
                             aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="5"
+                            aria-label="Slide 6"></button>
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="10000">
                             <img src="./resources/pics/1.jpg" class="d-block w-100" alt="Carousel Image">
-                            <div class="carousel-caption ">
-
-                                <h5>Moștenitorii si Moștenirea</h5>
+                            <div class="carousel-caption">
+                                <span>
+                                    <h5 id="descr1">Heirs and Inheritance</h5>
+                                </span>
                             </div>
                         </div>
                         <div class="carousel-item" data-bs-interval="10000">
                             <img src="./resources/pics/2.jpg" class="d-block w-100" alt="Carousel Image">
                             <div class="carousel-caption d-none d-md-block">
 
-                                <h5>Noi suntem Moștenitorii, mândre fete și feciori.</h5>
+                                <h5 id="descr2">We are the Heirs, proud daughters and sons.</h5>
                             </div>
                         </div>
                         <div class="carousel-item" data-bs-interval="10000">
-                            <img src="./resources/pics/3.jpg" class="d-block w-100" alt="Carousel Image">
+                            <img src="./resources/pics/img1.jpg" class="d-block w-100" alt="Carousel Image">
                             <div class="carousel-caption d-none d-md-block">
 
-                                <h5>Ansamblul Moștenitorii la 20 de ani de activitate.</h5>
+                                <h5 id="descr3">The Heirs Ensemble at 20 years of activity.</h5>
                             </div>
                         </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                            <img src="./resources/pics/img2.jpg" class="d-block w-100" alt="Carousel Image">
+                            <div class="carousel-caption d-none d-md-block">
+
+                                <h5 id="descr4">Together we promote Farmer's Day</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                            <img src="./resources/pics/4.jpg" class="d-block w-100" alt="Carousel Image">
+                            <div class="carousel-caption d-none d-md-block">
+
+                                <h5 id="descr5">Descendants of Stephen the Great</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                            <img src="./resources/pics/img3_auto_x2.jpg" class="d-block w-100" alt="Carousel Image">
+                            <div class="carousel-caption d-none d-md-block">
+
+                                <h5 id="descr6">Golden autumn</h5>
+                            </div>
+                        </div>
+                        
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
                         data-bs-slide="prev">
@@ -712,7 +741,7 @@
 
             <div class="row text-center text-md-left">
 
-                <div class="col-m-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <div class="col-m-3 col-lg-3 col-xl-3 mx-auto mt-3 hidden">
                     <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Our word</h5>
                     <p id="footercitate">We, those who came from the people, who grew up rocked by these songs, are obliged to preserve
                         them with the sanctity with which the heritage from an entire nation is preserved, we must watch
@@ -721,7 +750,7 @@
 
                 </div>
 
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 hidden">
                     <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Products</h5>
                     <p>
                         <a href="#" class="text-white" style="text-decoration: none;"> More Videos</a>
@@ -734,8 +763,8 @@
                     </p>
                 </div>
 
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h5 id="usefullinks" class="text-uppercase mb-4 font-weight-bold text-warning">Useful links</h5>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 hidden">
+                    <h5 id="usefullinks" class="text-uppercase mb-4 font-weight-bold text-warning ">Useful links</h5>
 
                     <p>
                         <a href="https://www.facebook.com/mostenitoriiriscani/" target="_blank" class="text-white"
@@ -754,8 +783,8 @@
 
                 </div>
 
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h5>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 hidden">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning ">Contact</h5>
                     <p>
                         <i class="bi bi-geo-fill"></i> Gavril Muzicescu 3, Moldova
                     </p>

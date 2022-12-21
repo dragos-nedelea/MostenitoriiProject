@@ -54,12 +54,24 @@ var language = {
             "usefullinks": "Linkuri utile",
 
         },
+         {//carousel section 
+            "descr1":"Moștenitorii si Moștenirea",
+            "descr2":"Noi suntem Moștenitorii, mândre fete și feciori.",
+            "descr3":"Ansamblul Moștenitorii la 20 de ani de activitate.",
+            "descr4":"Împreuna promovăm Ziua Agricultorului.",
+            "descr5":"Urmașii lui Ștefan Cel Mare.",
+            "descr6":"Toamna de Aur.",
+
+        },
     ]
 }
 
 // Define language via window hash
 if (window.location.hash) {
     if (window.location.hash === "#ro") {
+
+        langshow.textContent = "RO";
+
         // navbar
         home.textContent = language.ro[0].home;
         about.textContent = language.ro[0].about;
@@ -70,6 +82,16 @@ if (window.location.hash) {
         // footer section
         footercitate.textContent = language.ro[2].footercitate;
         usefullinks.textContent = language.ro[2].usefullinks;
+        // carousel section
+        descr1.textContent = language.ro[3].descr1;
+        descr2.textContent = language.ro[3].descr2;
+        descr3.textContent = language.ro[3].descr3;
+        descr4.textContent = language.ro[3].descr4;
+        descr5.textContent = language.ro[3].descr5;
+        descr6.textContent = language.ro[3].descr6;
+
+
+
 
 
     }
