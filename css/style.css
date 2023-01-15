@@ -70,7 +70,7 @@
 }
 
 .carousel-item {
-  height: 100vh;
+  height: 95vh;
 }
 
 footer {
@@ -174,7 +174,7 @@ footer {
   height: 480px;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 991px) {
   /* For mobile phones: */
   .navbar {
     background-color: #212529;
