@@ -17,18 +17,8 @@
   font-family: "Nerko One", cursive;
   text-transform: uppercase;
 }
-.navbar-brand img {
-  width: 30px;
-  height: 40px;
-}
 .navbar-brand .brandt1 {
-  color: blue;
-}
-.navbar-brand .brandt2 {
-  color: yellow;
-}
-.navbar-brand .brandt3 {
-  color: red;
+  color: #fec400;
 }
 
 .navbar-toggler-icon {
@@ -83,6 +73,15 @@ footer {
   height: auto;
 }
 
+#SectionTitle1,
+#SectionTitle2,
+#SectionTitle3,
+#SectionTitle4,
+#SectionTitle5 {
+  font-size: 36px;
+  font-style: bold;
+}
+
 .section1,
 .section3,
 .section5 {
@@ -100,6 +99,17 @@ footer {
 .section4,
 .section5 {
   padding: 5% 6%;
+}
+
+.cards {
+  display: flex;
+  justify-items: center;
+}
+.cards img {
+  border-radius: 15px;
+}
+.cards .card {
+  border-radius: 15px;
 }
 
 .nav-item::after {
@@ -139,6 +149,30 @@ footer {
   background: #fec400;
 }
 
+.rep1odd {
+  width: 650px;
+  border-radius: 15px;
+  margin: 0 150px 0 0;
+}
+
+.rep2even {
+  width: 650px;
+  border-radius: 15px;
+  margin: 0 0 0 150px;
+}
+
+.repContainer {
+  display: flex;
+  margin: 0 0 150px 0;
+}
+.repContainer p {
+  width: 600px;
+}
+
+.repSection {
+  margin: 150px;
+}
+
 .hidden {
   opacity: 0;
   transition: all 1s;
@@ -167,6 +201,38 @@ footer {
 
 .hidden:nth-child(4) {
   transition-delay: 800ms;
+}
+
+.hidden:nth-child(5) {
+  transition-delay: 1000ms;
+}
+
+.hidden:nth-child(6) {
+  transition-delay: 1200ms;
+}
+
+.hidden:nth-child(7) {
+  transition-delay: 1400ms;
+}
+
+.hidden:nth-child(8) {
+  transition-delay: 1600ms;
+}
+
+.hidden:nth-child(9) {
+  transition-delay: 1800ms;
+}
+
+.hidden:nth-child(10) {
+  transition-delay: 2000ms;
+}
+
+.hidden:nth-child(11) {
+  transition-delay: 2200ms;
+}
+
+.hidden:nth-child(12) {
+  transition-delay: 2400ms;
 }
 
 .videoInsert {
