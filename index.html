@@ -46,15 +46,15 @@
                                 data-bs-target=".navbar-collapse.show" href="#scrollspyHeading3">Our World Tour</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
+                            <a id="staff" class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
                                 href="#scrollspyHeading4">Ansemble's staff</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
+                            <a id="repert" class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
                                 href="#scrollspyHeading5">Repertory</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
+                            <a id="contact" class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
                                 href="#scrollspyHeading6">Contact Us</a>
                         </li>
 
@@ -398,7 +398,7 @@
                             </div>
                         </div>
                         <div class="card hidden col-md-4 col-lg-3 col-xl-3 mx-auto mt-3" style="width: 18rem;">
-                            <img src="./resources/pics/Nina.jpg" class="card-img-bottom" alt="...">
+                            <img src="./resources/pics/Nina.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Nina Efrim</h5>
                                 <ul class="list-group list-group-flush">
@@ -427,6 +427,7 @@
                                     cercul, în principiu invers sensului acelor ceasului</p>
                             </div>
                         </div>
+                        <hr class="mobile-hr">
                         <div class=" repContainer">
                             <div class="hidden">
                                 <h1>"Împletita"</h1>
@@ -439,6 +440,7 @@
                                 <img src="./resources/pics/rep2.jpg" class="rep2even" alt="...">
                             </div>
                         </div>
+                        <hr class="mobile-hr">
                         <div class=" repContainer">
                             <div class="hidden">
                                 <img src="./resources/pics/rep3.jpg" class="rep1odd" alt="...">
@@ -451,6 +453,7 @@
                                     cercul, în principiu invers sensului acelor ceasului</p>
                             </div>
                         </div>
+                        <hr class="mobile-hr">
                         <div class=" repContainer">
                             <div class="hidden">
                                 <h1>"Zestrea"</h1>
@@ -463,6 +466,7 @@
                                 <img src="./resources/pics/rep4.jpg" class="rep2even" alt="...">
                             </div>
                         </div>
+                        <hr class="mobile-hr">
                         <div class=" repContainer">
                             <div class="hidden">
                                 <img src="./resources/pics/rep5.jpg" class="rep1odd" alt="...">
@@ -475,6 +479,7 @@
                                     cercul, în principiu invers sensului acelor ceasului</p>
                             </div>
                         </div>
+                        <hr class="mobile-hr">
                         <div class=" repContainer">
                             <div class="hidden">
                                 <h1>"Suita de dansuri românești"</h1>
@@ -487,6 +492,7 @@
                                 <img src="./resources/pics/rep6.jpg" class="rep2even" alt="...">
                             </div>
                         </div>
+                        <hr class="mobile-hr">
                         <div class=" repContainer">
                             <div class="hidden">
                                 <img src="./resources/pics/rep7.jpg" class="rep1odd" alt="...">
@@ -499,6 +505,7 @@
                                     cercul, în principiu invers sensului acelor ceasului</p>
                             </div>
                         </div>
+                        <hr class="mobile-hr">
                         <div class=" repContainer">
                             <div class="hidden">
                                 <h1>"Ciuleandra"</h1>
@@ -661,7 +668,7 @@
             <div class="row text-center text-md-left">
 
                 <div class="col-m-3 col-lg-3 col-xl-3 mx-auto mt-3 hidden">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Our word</h5>
+                    <h5 id="oword" class="text-uppercase mb-4 font-weight-bold text-warning">Our word</h5>
                     <p id="footercitate">We, those who came from the people, who grew up rocked by these songs,
                         are
                         obliged to preserve
@@ -674,7 +681,7 @@
                 </div>
 
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 hidden">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Products</h5>
+                    <h5 id="products" class="text-uppercase mb-4 font-weight-bold text-warning">Products</h5>
                     <p>
                         <a href="#" class="text-white" style="text-decoration: none;"> More Videos</a>
                     </p>
@@ -708,7 +715,7 @@
                 </div>
 
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 hidden">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning ">Contact</h5>
+                    <h5 id="fcontact" class="text-uppercase mb-4 font-weight-bold text-warning ">Contact</h5>
                     <p>
                         <i class="bi bi-geo-fill"></i> Gavril Muzicescu 3, Moldova
                     </p>
@@ -726,18 +733,10 @@
             </div>
 
         </div>
-
-        <!-- <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="toast-header">
-                <img src="..." class="rounded me-2" alt="...">
-                <strong class="me-auto">Bootstrap</strong>
-                <small>11 mins ago</small>
-                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-            </div>
-            <div class="toast-body">
-                Hello, world! This is a toast message.
-            </div>
-        </div> -->
+        <div class="disclaimer">
+            <div>Acest website a fost realizat în cadrul competiției ”Tekwill Junior Ambassadors” organizată de
+                proiectul ”Tekwill în Fiecare Școală” și nu reflectă neapărat opinia proiectului.</div>
+        </div>
 
     </footer>
 

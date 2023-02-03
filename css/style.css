@@ -1,5 +1,7 @@
 #navbar-example2 {
   position: fixed;
+  display: flex;
+  justify-items: space-around;
   z-index: 100;
 }
 
@@ -14,13 +16,8 @@
 .navbar-brand {
   color: gold !important;
   font-weight: bold;
-  font-family: "Nerko One", cursive;
   text-transform: uppercase;
 }
-.navbar-brand .brandt1 {
-  color: #fec400;
-}
-
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 215, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
@@ -80,6 +77,7 @@ footer {
 #SectionTitle5 {
   font-size: 36px;
   font-style: bold;
+  margin: 4% 0;
 }
 
 .section1,
@@ -98,7 +96,7 @@ footer {
 .section3,
 .section4,
 .section5 {
-  padding: 5% 6%;
+  padding: 4% 15%;
 }
 
 .cards {
@@ -107,9 +105,13 @@ footer {
 }
 .cards img {
   border-radius: 15px;
+  height: 425px;
 }
 .cards .card {
   border-radius: 15px;
+}
+.cards .list-group-item {
+  padding: 4% 0;
 }
 
 .nav-item::after {
@@ -149,28 +151,37 @@ footer {
   background: #fec400;
 }
 
+.disclaimer {
+  margin: 0;
+  color: #fec400;
+  text-align: center;
+  padding: 7px;
+  border-top: 1px solid #EFEFEF;
+  font-size: 12px;
+}
+
+.disclaimer p {
+  padding: 0;
+  margin: 0;
+}
+
 .rep1odd {
   width: 650px;
   border-radius: 15px;
-  margin: 0 150px 0 0;
 }
 
 .rep2even {
   width: 650px;
   border-radius: 15px;
-  margin: 0 0 0 150px;
 }
 
 .repContainer {
   display: flex;
   margin: 0 0 150px 0;
+  justify-content: space-between;
 }
 .repContainer p {
   width: 600px;
-}
-
-.repSection {
-  margin: 150px;
 }
 
 .hidden {
@@ -263,5 +274,46 @@ footer {
   }
   .carousel-item {
     height: auto;
+  }
+  .rep1odd {
+    width: 325px;
+    border-radius: 15px;
+  }
+  .rep2even {
+    width: 325px;
+    border-radius: 15px;
+  }
+  .repContainer {
+    flex-flow: column;
+    margin-bottom: 75px;
+  }
+  .repContainer p {
+    width: 300px;
+    margin: 0;
+  }
+  .repContainer h1 {
+    margin: 4% 0;
+  }
+  .repSection {
+    margin: 0;
+  }
+  .cards {
+    flex-flow: column;
+  }
+  #SectionTitle1,
+#SectionTitle2,
+#SectionTitle3,
+#SectionTitle4,
+#SectionTitle5 {
+    font-size: 28px;
+    font-style: bold;
+    margin: 0 0 5% 0;
+  }
+  .section1,
+.section2,
+.section3,
+.section4,
+.section5 {
+    padding: 4% 6%;
   }
 }/*# sourceMappingURL=style.css.map */
