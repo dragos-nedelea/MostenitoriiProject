@@ -96,7 +96,7 @@ footer {
 .section3,
 .section4,
 .section5 {
-  padding: 4% 15%;
+  padding: 4% 9%;
 }
 
 .cards {
@@ -181,7 +181,7 @@ footer {
   justify-content: space-between;
 }
 .repContainer p {
-  width: 600px;
+  width: 500px;
 }
 
 .hidden {
@@ -251,7 +251,7 @@ footer {
   height: 480px;
 }
 
-@media only screen and (max-width: 991px) {
+@media screen and (max-width: 991px) {
   /* For mobile phones: */
   .navbar {
     background-color: #212529;

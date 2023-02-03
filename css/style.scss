@@ -139,7 +139,7 @@ footer {
 .section3,
 .section4,
 .section5 {
-    padding: 4% 15%;
+    padding: 4% 9%;
 }
 
 .cards {
@@ -234,7 +234,7 @@ footer {
     justify-content: space-between;
 
     p {
-        width: 600px;
+        width: 500px;
     }
 }
 
@@ -336,7 +336,7 @@ footer {
 //--------------------------------------------------------------------------- 
 // ===============================================================================================
 
-@media only screen and (max-width: 991px) {
+@media screen and (max-width: 991px) {
 
     /* For mobile phones: */
     .navbar {
