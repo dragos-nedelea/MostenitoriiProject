@@ -9,6 +9,25 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// ---------------------------ImageMap scroll animation-----------------------------------
+const observer1 = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const sect2 = entry.target.querySelector('.app');
+  
+      if (entry.isIntersecting) {
+        sect2.classList.add('app');
+        return; // if we added the class, exit the function
+      }
+  
+      // We're not intersecting, so remove the class!
+      sect2.classList.remove('app');
+    });
+  });
+  
+  observer1.observe(document.querySelector('.section2'));
+
+// ---------------------------------------------------------------------------------------
+
 // =============================== Text apprearance animation ============================
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -57,7 +76,7 @@ var language = {
 
         },
         {//footer section 
-            "footercitate": "Noi, cei ieșiți din popor, care am crescut legănati de aceste cân- tece, suntem datori a le păstra cu sfințenia cu care se păstrează moştenirea venită de la o națiune întreagă, trebuie să veghem lângă această comoară, căci ea fiind a poporului este şi a noastră. este a întregii suflări românești; şi apoi - cine nu păstrează ce are, nu-i vrednic să aibă nimic.",
+            "footercitate": "Noi, cei ieșiți din popor, care am crescut legănati de aceste cân- tece, suntem datori a le păstra cu sfințenia cu care se păstrează moştenirea venită de la o națiune întreagă, trebuie să veghem lângă această comoară, căci ea fiind a poporului este şi a noastră. este a întregii suflări românești",
             "usefullinks": "Linkuri utile",
             "products": "Produse",
             "fcontact": "Contactează-ne",
@@ -71,6 +90,16 @@ var language = {
             "descr4":"Împreuna promovăm Ziua Agricultorului.",
             "descr5":"Urmașii lui Ștefan Cel Mare.",
             "descr6":"Toamna de Aur.",
+
+        },
+        {//Join section 
+            "surname":"Nume",
+            "Name":"Prenume",
+            "email":"Adresa de e-mail",
+            "Pnumb":"Nr.telefon",
+            "YrMess":"Mesaj...",
+            "chbText":"Sunt de acord cu termenii și condițiile",
+
 
         },
     ]
@@ -101,7 +130,6 @@ if (window.location.hash) {
         products.textContent = language.ro[2].products;
         fcontact.textContent = language.ro[2].fcontact;
         oword.textContent = language.ro[2].oword;
-
         // carousel section
         descr1.textContent = language.ro[3].descr1;
         descr2.textContent = language.ro[3].descr2;
@@ -109,6 +137,14 @@ if (window.location.hash) {
         descr4.textContent = language.ro[3].descr4;
         descr5.textContent = language.ro[3].descr5;
         descr6.textContent = language.ro[3].descr6;
+         // join section
+         surname.placeholder = language.ro[4].surname;
+         Name.placeholder = language.ro[4].Name;
+         email.placeholder = language.ro[4].email;
+         Pnumb.placeholder = language.ro[4].Pnumb;
+         YrMess.placeholder = language.ro[4].YrMess;
+         chbText.textContent = language.ro[4].chbText;
+
 
 
 

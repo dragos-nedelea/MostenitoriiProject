@@ -20,13 +20,9 @@
 .navbar-brand {
     color: gold !important;
     font-weight: bold;
+    font-family: 'Manrope';
     text-transform: uppercase;
 
-
-    img {
-        // width: 30px;
-        // height: 40px;
-    }
 
 }
 
@@ -63,7 +59,7 @@
 
 .nav-link {
     color: gold !important;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Manrope';
     // text-transform: uppercase;
     font-weight: bold;
 }
@@ -112,14 +108,20 @@ footer {
 #SectionTitle3,
 #SectionTitle4,
 #SectionTitle5 {
-    font-size: 36px;
-    font-style: bold;
+    font-size: 40px;
+    font-family: 'Manrope';
+    font-weight: bold;
     // color: #fec400;
     // background-color: #212529;
     // width: fit-content;
     // border-radius: 15px;
     // padding: 1%;
-    margin: 4% 0;
+    margin: 3.5% 0 0 0;
+}
+
+#SectionTitle1 p {
+    font-size: 30px;
+    
 }
 
 
@@ -142,9 +144,18 @@ footer {
     padding: 4% 9%;
 }
 
+// .section5 {
+//     background-image: url("../resources/pics/formHead.jpg");
+//     background-size: cover;
+//     background-attachment: fixed;
+//     width: 100%;
+//     background-color: none;
+// }
+
 .cards {
     display: flex;
     justify-items: center;
+    
 
     img {
         border-radius: 15px;
@@ -153,11 +164,19 @@ footer {
 
     .card {
         border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        transition: 1s !important;
+    
+       
     }
 
     .list-group-item {
         padding: 4% 0;
     }
+}
+
+.card:hover {
+    transform: scale(1.1,1.1) !important;
 }
 
 .nav-item::after {
@@ -202,7 +221,7 @@ footer {
     color: #fec400;
     text-align: center;
     padding: 7px;
-    border-top: 1px solid #EFEFEF;
+    border-top: 1px solid #fec400;
     font-size: 12px;
 }
 
@@ -245,6 +264,63 @@ footer {
 // ---------------------------==============================-----------------------------------------
 
 // --------------------------- Appearance animation -----------------------------------------
+.iframely-embed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    background: white;
+  }
+
+  
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    // padding-bottom: 4vmin;
+    // height: 90vh;
+    // width: 100%;
+    // background: #ede8e2;
+    // color: #3a3535;
+  }
+
+  
+  @import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+  
+  .title {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  
+    font-family: 'Manrope';
+    font-size: 8vw;
+    width: 100%;
+    z-index: 2;
+  
+  }
+  
+  
+  .image {
+    grid-row: 1;
+    grid-column: 2;
+    margin-left: -2rem;
+    opacity: 0.7;
+    
+    }
+  
+    img {
+      display: block;
+      width: 90%;
+      height: auto;
+      border-radius: 15px;
+
+    }
+  
+  
+  
+
+
 
 .hidden {
     opacity: 0;
@@ -334,6 +410,560 @@ footer {
 //   }
 
 //--------------------------------------------------------------------------- 
+
+// ---------------------------Join thr Ansemble------------------------------
+// .formHead {
+//     width: 500px;
+//     margin:0 0 4% 0;
+//     border-radius: 15px;
+//     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+// }
+
+.Form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+
+.PMForm {
+    display: flex;
+    justify-content: space-around;
+    
+
+    
+}
+
+.PMForm .container {
+    display: flex;
+    /* width: 50%; */
+    // margin: 4% 0;
+    flex-direction: column;
+
+}
+
+.PMForm .container:nth-child(2) {
+    align-items: center;
+
+}
+
+.PMForm .container .title {
+    width: 517px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    margin: 0 0 4% 0;
+
+
+}
+
+.PMForm .container .description {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    width: 490px;
+    color: #404040;
+
+    opacity: 0.99;
+
+}
+
+.PMForm .container .description .TermsCond {
+    text-decoration: none;
+    color: #4743E0;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.PMForm .container .Form input {
+    width: 308px;
+    height: 40px;
+    margin: 0 0 12px 0;
+
+}
+
+
+.PMForm .container .Form .col input {
+    width: 150px;
+    height: 40px;
+   
+    /* margin: 0 0 12px 0; */
+
+}
+
+.PMForm .container .Form .checkbox {
+    height: 24px;
+    width: 24px;
+    margin: 0;
+}
+
+.PMForm .container .Form .check {
+    display: flex;
+    align-items: center;
+    margin: 0 0 24px 0;
+
+}
+.PMForm .container .Form .checkP {
+    margin: 0 0 0 15px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+
+    color: #404040;
+
+}
+
+.PMForm .container .Form .checkP .TermsCond {
+    text-decoration: none;
+    color: #4743E0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.PMForm .container .Form .submitbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 64px;
+    background: #212529;
+    border-radius: 32px;
+    border: #923A3A;
+    margin-right: 7px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.PMForm .container .Form .submitbtn p {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    color: #fec400;
+    margin: 0;
+}
+
+.PMForm .container .Form .submitbtn:hover {
+    background: #33393f;
+
+}
+
+.PMForm .container .Form .usermess {
+    height: 55px;
+}
+
+
+.PMForm .container .Form .vector1 input {
+    padding: 10px 30px;
+    transition: .3s;
+}
+
+.PMForm .container .Form .vector1 img {
+    position: absolute;
+    top: 10px;
+    left: 7px;
+    transition: .2s;
+}
+
+.PMForm .container .Form .vector1 input:hover~img {
+    opacity: 0;
+}
+
+.PMForm .container .Form .vector1 input:focus~img {
+    opacity: 0;
+
+}
+
+.PMForm .container .Form .vector1 input:hover {
+    padding: 0 5px;
+}
+
+.PMForm .container .Form .vector1 input:focus {
+    padding: 5px;
+}
+
+.PMForm .container .Form .vector1 input::placeholder {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+
+    color: #000000;
+
+    opacity: 0.4;
+
+}
+
+
+
+.PMForm .container .Form .vector2 {
+    position: relative;
+}
+
+.PMForm .container .Form .vector2 input {
+    padding: 10px 30px;
+    transition: .3s;
+}
+
+.PMForm .container .Form .vector2 img {
+    position: absolute;
+    top: 10px;
+    left: 7px;
+    transition: .2s;
+}
+
+.PMForm .container .Form .vector2 input:hover~img {
+    opacity: 0;
+}
+
+.PMForm .container .Form .vector2 input:focus~img {
+    opacity: 0;
+
+}
+
+.PMForm .container .Form .vector2 input:hover {
+    padding: 0 5px;
+}
+
+.PMForm .container .Form .vector2 input:focus {
+    padding: 5px;
+}
+
+.PMForm .container .Form .vector2 input::placeholder {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+
+    color: #000000;
+
+    opacity: 0.4;
+
+}
+
+
+
+.PMForm .container .Form .vector3 {
+    position: relative;
+}
+
+.PMForm .container .Form .vector3 input {
+    padding: 10px 30px;
+    transition: .3s;
+}
+
+.PMForm .container .Form .vector3 img {
+    position: absolute;
+    top: 10px;
+    left: 7px;
+    transition: .2s;
+}
+
+.PMForm .container .Form .vector3 input:hover~img {
+    opacity: 0;
+}
+
+.PMForm .container .Form .vector3 input:focus~img {
+    opacity: 0;
+
+}
+
+.PMForm .container .Form .vector3 input:hover {
+    padding: 0 5px;
+}
+
+.PMForm .container .Form .vector3 input:focus {
+    padding: 5px;
+}
+
+.PMForm .container .Form .vector3 input::placeholder {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+
+    color: #000000;
+
+    opacity: 0.4;
+
+}
+
+
+
+
+.PMForm .container .Form .vector4 {
+    position: relative;
+}
+
+.PMForm .container .Form .vector4 input {
+    padding: 10px 30px;
+    transition: .3s;
+}
+
+.PMForm .container .Form .vector4 img {
+    position: absolute;
+    top: 10px;
+    left: 7px;
+    transition: .2s;
+}
+
+.PMForm .container .Form .vector4 input:hover~img {
+    opacity: 0;
+}
+
+.PMForm .container .Form .vector4 input:focus~img {
+    opacity: 0;
+
+}
+
+.PMForm .container .Form .vector4 input:hover {
+    padding: 0 5px;
+}
+
+.PMForm .container .Form .vector4 input:focus {
+    padding: 5px;
+}
+
+.PMForm .container .Form .vector4 input::placeholder {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+
+    color: #000000;
+
+    opacity: 0.4;
+
+}
+
+
+
+.PMForm .container .Form .vector5 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: 0 7px 0 0;
+    width: 308px;
+}
+
+.PMForm .container .Form .vector5 input {
+    padding: 10px 30px;
+    transition: .3s;
+}
+
+.PMForm .container .Form .vector5 img {
+    position: absolute;
+    top: 10px;
+    left: 7px;
+    transition: .2s;
+}
+
+.PMForm .container .Form .vector5 input:hover~img {
+    opacity: 0;
+}
+
+.PMForm .container .Form .vector5 input:focus~img {
+    opacity: 0;
+
+}
+
+.PMForm .container .Form .vector5 input:hover {
+    padding: 0 5px;
+}
+
+.PMForm .container .Form .vector5 input:focus {
+    padding: 5px;
+}
+
+.PMForm .container .Form .vector5 input::placeholder {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+
+    color: #000000;
+
+    opacity: 0.4;
+
+}
+
+
+
+.PMForm .container .Form .vector6 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 308px;
+}
+
+.PMForm .container .Form .vector6 input {
+    padding: 10px 30px;
+    transition: .3s;
+}
+
+.PMForm .container .Form .vector6 img {
+    position: absolute;
+    top: 10px;
+    left: 7px;
+    transition: .2s;
+}
+
+.PMForm .container .Form .vector6 input:hover~img {
+    opacity: 0;
+}
+
+.PMForm .container .Form .vector6 input:focus~img {
+    opacity: 0;
+
+}
+
+.PMForm .container .Form .vector6 input:hover {
+    padding: 0 5px;
+}
+
+.PMForm .container .Form .vector6 input:focus {
+    padding: 5px;
+}
+
+.PMForm .container .Form .vector6 input::placeholder {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+
+    color: #000000;
+
+    opacity: 0.4;
+
+}
+
+
+.PMForm .container .Form .vector7 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 308px;
+}
+
+.PMForm .container .Form .vector7 input {
+    padding: 10px 30px;
+    transition: .3s;
+}
+
+.PMForm .container .Form .vector7 img {
+    position: absolute;
+    top: 10px;
+    left: 7px;
+    transition: .2s;
+}
+
+.PMForm .container .Form .vector7 input:hover~img {
+    opacity: 0;
+}
+
+.PMForm .container .Form .vector7 input:focus~img {
+    opacity: 0;
+
+}
+
+.PMForm .container .Form .vector7 input:hover {
+    padding: 0 5px;
+}
+
+.PMForm .container .Form .vector7 input:focus {
+    padding: 5px;
+}
+
+.PMForm .container .Form .vector7 input::placeholder {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+
+    color: #000000;
+
+    opacity: 0.4;
+
+}
+
+.PMForm .container .Form .vector8 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 308px;
+}
+
+.PMForm .container .Form .vector8 input {
+    padding: 10px 30px;
+    transition: .3s;
+}
+
+.PMForm .container .Form .vector8 img {
+    position: absolute;
+    top: 17px;
+    left: 7px;
+    transition: .2s;
+}
+
+.PMForm .container .Form .vector8 input:hover~img {
+    opacity: 0;
+}
+
+.PMForm .container .Form .vector8 input:focus~img {
+    opacity: 0;
+
+}
+
+.PMForm .container .Form .vector8 input:hover {
+    padding: 0 5px;
+}
+
+.PMForm .container .Form .vector8 input:focus {
+    padding: 5px;
+}
+
+.PMForm .container .Form .vector8 input::placeholder {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+
+    color: #000000;
+
+    opacity: 0.4;
+
+}
+// --------------------------------------------------------------------------
 // ===============================================================================================
 
 @media screen and (max-width: 991px) {
@@ -413,7 +1043,8 @@ footer {
     #SectionTitle3,
     #SectionTitle4,
     #SectionTitle5 {
-        font-size: 28px;
+        font-family: 'Manrope';
+        font-size: 60px;
         font-style: bold;
         margin: 0 0 5% 0;
         // color: #fec400;
@@ -430,6 +1061,38 @@ footer {
 .section4,
 .section5 {
     padding: 4% 6%;
+}
+
+.PMForm {
+    flex-flow: column;
+}
+
+.PMForm .container .title {
+    width: 350px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+
+
+}
+
+.PMForm .container .description {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    width: 350px;
+    color: #404040;
+
+    opacity: 0.99;
+
 }
 
 }
