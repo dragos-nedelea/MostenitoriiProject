@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Eczar&display=swap");
 #navbar-example2 {
   position: fixed;
   display: flex;
@@ -17,7 +18,7 @@
 .navbar-brand {
   color: gold !important;
   font-weight: bold;
-  font-family: "Manrope";
+  font-family: "Libre Baskerville", serif;
   text-transform: uppercase;
 }
 
@@ -35,7 +36,41 @@
 }
 
 .dropdown {
-  width: 65px;
+  margin: 0;
+  padding: 0;
+}
+
+.switch {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center !important;
+  width: 150px;
+}
+.switch div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.swIcon {
+  width: 20px;
+  height: 20px;
+  margin: 4px 0 0 3.5px;
+}
+
+.form-check-input {
+  height: 20px !important;
+}
+
+.form-check-input:checked {
+  background-color: #fec400 !important;
+  border-color: mistyrose !important;
+}
+
+.form-check-input:focus {
+  border-color: mistyrose !important;
+  box-shadow: 0 0 0 0.2rem hsla(46deg, 100%, 50%, 0.25) !important;
 }
 
 .navbar-scrolled {
@@ -47,7 +82,7 @@
 
 .nav-link {
   color: gold !important;
-  font-family: "Manrope";
+  font-family: "Libre Baskerville", serif;
   font-weight: bold;
 }
 
@@ -59,8 +94,13 @@
   width: 100%;
 }
 
-.carousel-item {
+#carouselExampleInterval .carousel-item {
   height: 95vh;
+}
+
+#carouselExampleIndicators .carousel-control-next,
+#carouselExampleIndicators .carousel-control-prev {
+  width: auto;
 }
 
 footer {
@@ -68,9 +108,18 @@ footer {
   padding: 0px;
 }
 
+.socialmedia {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 15px;
+}
+
 .socialmedicons {
   width: 35px;
   height: auto;
+  margin: 5px 0;
+  margin: 0 5px;
 }
 
 #SectionTitle1,
@@ -79,13 +128,21 @@ footer {
 #SectionTitle4,
 #SectionTitle5 {
   font-size: 40px;
-  font-family: "Manrope";
+  font-family: "Libre Baskerville", serif;
   font-weight: bold;
-  margin: 3.5% 0 0 0;
+  margin: 3.5% 0 5% 0;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(33, 37, 41, 0.5);
 }
 
 #SectionTitle1 p {
   font-size: 30px;
+}
+
+#scrollspyHeading3 p {
+  color: #212529;
+  text-shadow: 3px 3px 4px gray;
+  font-family: "Eczar", serif;
 }
 
 .section1,
@@ -109,6 +166,7 @@ footer {
 
 .cards {
   display: flex;
+  flex-wrap: wrap;
   justify-items: center;
 }
 .cards img {
@@ -117,7 +175,8 @@ footer {
 }
 .cards .card {
   border-radius: 15px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border: none;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   transition: 1s !important;
 }
 .cards .list-group-item {
@@ -194,8 +253,20 @@ footer {
   margin: 0 0 150px 0;
   justify-content: space-between;
 }
-.repContainer p {
-  width: 500px;
+.repContainer div:nth-child(1) {
+  width: 50%;
+}
+.repContainer div:nth-child(2) {
+  width: 50%;
+  padding-left: 30px;
+}
+.repSection {
+  padding: 0 9%;
+}
+
+.repSectioncar {
+  padding: 0 9%;
+  height: 480px;
 }
 
 .iframely-embed {
@@ -217,7 +288,7 @@ footer {
 .title {
   grid-column: 1/-1;
   grid-row: 1;
-  font-family: "Manrope";
+  font-family: "Libre Baskerville", serif;
   font-size: 8vw;
   width: 100%;
   z-index: 2;
@@ -229,12 +300,10 @@ footer {
   margin-left: -2rem;
   opacity: 0.7;
 }
-
-img {
+.image img {
   display: block;
   width: 90%;
   height: auto;
-  border-radius: 15px;
 }
 
 .hidden {
@@ -313,12 +382,102 @@ img {
 .PMForm {
   display: flex;
   justify-content: space-around;
+  margin-top: 30px;
+}
+
+#surname {
+  border-radius: 15px;
+  border: 1px solid rgba(128, 128, 128, 0.323);
+  min-height: 40px;
+}
+#surname::-moz-placeholder {
+  font-family: "Libre Baskerville", serif;
+  font-weight: normal;
+  align-items: center;
+  opacity: 0.4;
+}
+#surname::placeholder {
+  font-family: "Libre Baskerville", serif;
+  font-weight: normal;
+  align-items: center;
+  opacity: 0.4;
+}
+
+#Name {
+  border-radius: 15px;
+  border: 1px solid rgba(128, 128, 128, 0.323);
+  min-height: 40px;
+}
+#Name::-moz-placeholder {
+  font-family: "Libre Baskerville", serif;
+  font-weight: normal;
+  align-items: center;
+  opacity: 0.4;
+}
+#Name::placeholder {
+  font-family: "Libre Baskerville", serif;
+  font-weight: normal;
+  align-items: center;
+  opacity: 0.4;
+}
+
+#email {
+  border-radius: 15px;
+  border: 1px solid rgba(128, 128, 128, 0.323);
+  min-height: 40px;
+}
+#email::-moz-placeholder {
+  font-family: "Libre Baskerville", serif;
+  font-weight: normal;
+  align-items: center;
+  opacity: 0.4;
+}
+#email::placeholder {
+  font-family: "Libre Baskerville", serif;
+  font-weight: normal;
+  align-items: center;
+  opacity: 0.4;
+}
+
+#Pnumb {
+  border-radius: 15px;
+  border: 1px solid rgba(128, 128, 128, 0.323);
+  min-height: 40px;
+}
+#Pnumb::-moz-placeholder {
+  font-family: "Libre Baskerville", serif;
+  font-weight: normal;
+  align-items: center;
+  opacity: 0.4;
+}
+#Pnumb::placeholder {
+  font-family: "Libre Baskerville", serif;
+  font-weight: normal;
+  align-items: center;
+  opacity: 0.4;
+}
+
+#YrMess {
+  border-radius: 15px;
+  border: 1px solid rgba(128, 128, 128, 0.323);
+  width: 100%;
+  min-height: 70px;
+  margin: 0 0 18px 0;
+}
+#YrMess::-moz-placeholder {
+  font-family: "Libre Baskerville", serif;
+  opacity: 0.4;
+}
+#YrMess::placeholder {
+  font-family: "Libre Baskerville", serif;
+  opacity: 0.4;
 }
 
 .PMForm .container {
   display: flex;
   /* width: 50%; */
   flex-direction: column;
+  padding: 0;
 }
 
 .PMForm .container:nth-child(2) {
@@ -327,10 +486,10 @@ img {
 
 .PMForm .container .title {
   width: 517px;
-  font-family: "Manrope";
+  font-family: "Libre Baskerville", serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 45px;
+  font-size: 30px;
   line-height: 45px;
   display: flex;
   align-items: center;
@@ -338,7 +497,7 @@ img {
 }
 
 .PMForm .container .description {
-  font-family: "Manrope";
+  font-family: "Libre Baskerville", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -359,7 +518,7 @@ img {
 .PMForm .container .Form input {
   width: 308px;
   height: 40px;
-  margin: 0 0 12px 0;
+  margin: 0 0 18px 0;
 }
 
 .PMForm .container .Form .col input {
@@ -382,7 +541,7 @@ img {
 
 .PMForm .container .Form .checkP {
   margin: 0 0 0 15px;
-  font-family: "Manrope";
+  font-family: "Libre Baskerville", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -402,10 +561,11 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 200px;
-  height: 64px;
+  margin: auto;
+  width: 100%;
+  height: 48px;
   background: #212529;
-  border-radius: 32px;
+  border-radius: 50px;
   border: #923A3A;
   margin-right: 7px;
   cursor: pointer;
@@ -427,262 +587,6 @@ img {
 
 .PMForm .container .Form .usermess {
   height: 55px;
-}
-
-.PMForm .container .Form .vector1 input {
-  padding: 10px 30px;
-  transition: 0.3s;
-}
-
-.PMForm .container .Form .vector1 img {
-  position: absolute;
-  top: 10px;
-  left: 7px;
-  transition: 0.2s;
-}
-
-.PMForm .container .Form .vector1 input:hover ~ img {
-  opacity: 0;
-}
-
-.PMForm .container .Form .vector1 input:focus ~ img {
-  opacity: 0;
-}
-
-.PMForm .container .Form .vector1 input:hover {
-  padding: 0 5px;
-}
-
-.PMForm .container .Form .vector1 input:focus {
-  padding: 5px;
-}
-
-.PMForm .container .Form .vector1 input::-moz-placeholder {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 28px;
-  letter-spacing: 0.25px;
-  color: #000000;
-  opacity: 0.4;
-}
-
-.PMForm .container .Form .vector1 input:-ms-input-placeholder {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 28px;
-  letter-spacing: 0.25px;
-  color: #000000;
-  opacity: 0.4;
-}
-
-.PMForm .container .Form .vector1 input::placeholder {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 28px;
-  letter-spacing: 0.25px;
-  color: #000000;
-  opacity: 0.4;
-}
-
-.PMForm .container .Form .vector2 {
-  position: relative;
-}
-
-.PMForm .container .Form .vector2 input {
-  padding: 10px 30px;
-  transition: 0.3s;
-}
-
-.PMForm .container .Form .vector2 img {
-  position: absolute;
-  top: 10px;
-  left: 7px;
-  transition: 0.2s;
-}
-
-.PMForm .container .Form .vector2 input:hover ~ img {
-  opacity: 0;
-}
-
-.PMForm .container .Form .vector2 input:focus ~ img {
-  opacity: 0;
-}
-
-.PMForm .container .Form .vector2 input:hover {
-  padding: 0 5px;
-}
-
-.PMForm .container .Form .vector2 input:focus {
-  padding: 5px;
-}
-
-.PMForm .container .Form .vector2 input::-moz-placeholder {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 28px;
-  letter-spacing: 0.25px;
-  color: #000000;
-  opacity: 0.4;
-}
-
-.PMForm .container .Form .vector2 input:-ms-input-placeholder {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 28px;
-  letter-spacing: 0.25px;
-  color: #000000;
-  opacity: 0.4;
-}
-
-.PMForm .container .Form .vector2 input::placeholder {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 28px;
-  letter-spacing: 0.25px;
-  color: #000000;
-  opacity: 0.4;
-}
-
-.PMForm .container .Form .vector3 {
-  position: relative;
-}
-
-.PMForm .container .Form .vector3 input {
-  padding: 10px 30px;
-  transition: 0.3s;
-}
-
-.PMForm .container .Form .vector3 img {
-  position: absolute;
-  top: 10px;
-  left: 7px;
-  transition: 0.2s;
-}
-
-.PMForm .container .Form .vector3 input:hover ~ img {
-  opacity: 0;
-}
-
-.PMForm .container .Form .vector3 input:focus ~ img {
-  opacity: 0;
-}
-
-.PMForm .container .Form .vector3 input:hover {
-  padding: 0 5px;
-}
-
-.PMForm .container .Form .vector3 input:focus {
-  padding: 5px;
-}
-
-.PMForm .container .Form .vector3 input::-moz-placeholder {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 28px;
-  letter-spacing: 0.25px;
-  color: #000000;
-  opacity: 0.4;
-}
-
-.PMForm .container .Form .vector3 input:-ms-input-placeholder {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 28px;
-  letter-spacing: 0.25px;
-  color: #000000;
-  opacity: 0.4;
-}
-
-.PMForm .container .Form .vector3 input::placeholder {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 28px;
-  letter-spacing: 0.25px;
-  color: #000000;
-  opacity: 0.4;
-}
-
-.PMForm .container .Form .vector4 {
-  position: relative;
-}
-
-.PMForm .container .Form .vector4 input {
-  padding: 10px 30px;
-  transition: 0.3s;
-}
-
-.PMForm .container .Form .vector4 img {
-  position: absolute;
-  top: 10px;
-  left: 7px;
-  transition: 0.2s;
-}
-
-.PMForm .container .Form .vector4 input:hover ~ img {
-  opacity: 0;
-}
-
-.PMForm .container .Form .vector4 input:focus ~ img {
-  opacity: 0;
-}
-
-.PMForm .container .Form .vector4 input:hover {
-  padding: 0 5px;
-}
-
-.PMForm .container .Form .vector4 input:focus {
-  padding: 5px;
-}
-
-.PMForm .container .Form .vector4 input::-moz-placeholder {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 28px;
-  letter-spacing: 0.25px;
-  color: #000000;
-  opacity: 0.4;
-}
-
-.PMForm .container .Form .vector4 input:-ms-input-placeholder {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 28px;
-  letter-spacing: 0.25px;
-  color: #000000;
-  opacity: 0.4;
-}
-
-.PMForm .container .Form .vector4 input::placeholder {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 28px;
-  letter-spacing: 0.25px;
-  color: #000000;
-  opacity: 0.4;
 }
 
 .PMForm .container .Form .vector5 {
@@ -713,27 +617,14 @@ img {
   opacity: 0;
 }
 
-.PMForm .container .Form .vector5 input:hover {
-  padding: 0 5px;
-}
-
 .PMForm .container .Form .vector5 input:focus {
   padding: 5px;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .PMForm .container .Form .vector5 input::-moz-placeholder {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 28px;
-  letter-spacing: 0.25px;
-  color: #000000;
-  opacity: 0.4;
-}
-
-.PMForm .container .Form .vector5 input:-ms-input-placeholder {
-  font-family: "Manrope";
+  font-family: "Libre Baskerville", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -744,7 +635,7 @@ img {
 }
 
 .PMForm .container .Form .vector5 input::placeholder {
-  font-family: "Manrope";
+  font-family: "Libre Baskerville", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -782,27 +673,14 @@ img {
   opacity: 0;
 }
 
-.PMForm .container .Form .vector6 input:hover {
-  padding: 0 5px;
-}
-
 .PMForm .container .Form .vector6 input:focus {
   padding: 5px;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .PMForm .container .Form .vector6 input::-moz-placeholder {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 28px;
-  letter-spacing: 0.25px;
-  color: #000000;
-  opacity: 0.4;
-}
-
-.PMForm .container .Form .vector6 input:-ms-input-placeholder {
-  font-family: "Manrope";
+  font-family: "Libre Baskerville", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -813,7 +691,7 @@ img {
 }
 
 .PMForm .container .Form .vector6 input::placeholder {
-  font-family: "Manrope";
+  font-family: "Libre Baskerville", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -851,27 +729,14 @@ img {
   opacity: 0;
 }
 
-.PMForm .container .Form .vector7 input:hover {
-  padding: 0 5px;
-}
-
 .PMForm .container .Form .vector7 input:focus {
   padding: 5px;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .PMForm .container .Form .vector7 input::-moz-placeholder {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 28px;
-  letter-spacing: 0.25px;
-  color: #000000;
-  opacity: 0.4;
-}
-
-.PMForm .container .Form .vector7 input:-ms-input-placeholder {
-  font-family: "Manrope";
+  font-family: "Libre Baskerville", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -882,7 +747,7 @@ img {
 }
 
 .PMForm .container .Form .vector7 input::placeholder {
-  font-family: "Manrope";
+  font-family: "Libre Baskerville", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -900,7 +765,7 @@ img {
   width: 308px;
 }
 
-.PMForm .container .Form .vector8 input {
+.PMForm .container .Form .vector8 textarea {
   padding: 10px 30px;
   transition: 0.3s;
 }
@@ -912,24 +777,22 @@ img {
   transition: 0.2s;
 }
 
-.PMForm .container .Form .vector8 input:hover ~ img {
+.PMForm .container .Form .vector8 textarea:hover ~ img {
   opacity: 0;
 }
 
-.PMForm .container .Form .vector8 input:focus ~ img {
+.PMForm .container .Form .vector8 textarea:focus ~ img {
   opacity: 0;
 }
 
-.PMForm .container .Form .vector8 input:hover {
-  padding: 0 5px;
+.PMForm .container .Form .vector8 textarea:focus {
+  padding: 10px 5px;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
-.PMForm .container .Form .vector8 input:focus {
-  padding: 5px;
-}
-
-.PMForm .container .Form .vector8 input::-moz-placeholder {
-  font-family: "Manrope";
+.PMForm .container .Form .vector8 textarea::-moz-placeholder {
+  font-family: "Libre Baskerville", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -939,8 +802,8 @@ img {
   opacity: 0.4;
 }
 
-.PMForm .container .Form .vector8 input:-ms-input-placeholder {
-  font-family: "Manrope";
+.PMForm .container .Form .vector8 textarea::placeholder {
+  font-family: "Libre Baskerville", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -950,15 +813,22 @@ img {
   opacity: 0.4;
 }
 
-.PMForm .container .Form .vector8 input::placeholder {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 28px;
-  letter-spacing: 0.25px;
-  color: #000000;
-  opacity: 0.4;
+.checkbox {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border-radius: 15px;
+  vertical-align: middle;
+  border: 1px solid rgba(128, 128, 128, 0.323);
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.checkbox:checked {
+  background-color: #fec400;
 }
 
 @media screen and (max-width: 991px) {
@@ -994,62 +864,95 @@ img {
     border-radius: 15px;
   }
   .repContainer {
-    flex-flow: column;
-    margin-bottom: 75px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 75px 0;
+    align-items: center;
+  }
+  .repContainer div:nth-child(1) {
+    width: 100%;
+  }
+  .repContainer div:nth-child(2) {
+    width: 100%;
+    padding: 0;
   }
   .repContainer p {
-    width: 300px;
-    margin: 0;
-  }
-  .repContainer h1 {
-    margin: 4% 0;
+    font-size: 13px;
   }
   .repSection {
     margin: 0;
+  }
+  .repSection .repContainer p {
+    font-size: 13px;
   }
   .cards {
     flex-flow: column;
   }
   #SectionTitle1,
-#SectionTitle2,
-#SectionTitle3,
-#SectionTitle4,
-#SectionTitle5 {
-    font-family: "Manrope";
-    font-size: 60px;
+  #SectionTitle2,
+  #SectionTitle3,
+  #SectionTitle4,
+  #SectionTitle5 {
+    font-family: "Libre Baskerville", serif;
+    font-size: 35px;
     font-style: bold;
     margin: 0 0 5% 0;
   }
+  .section1 p {
+    font-family: "Eczar", serif;
+    font-size: 13px;
+  }
+  #carouselExampleInterval .carousel-item {
+    height: auto;
+  }
   .section1,
-.section2,
-.section3,
-.section4,
-.section5 {
-    padding: 4% 6%;
+  .section2,
+  .section3,
+  .section4,
+  .section5 {
+    padding: 6% 6%;
   }
   .PMForm {
     flex-flow: column;
   }
   .PMForm .container .title {
     width: 350px;
-    font-family: "Manrope";
+    font-family: "Libre Baskerville", serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 30px;
-    line-height: 45px;
+    font-size: 25px;
+    line-height: normal;
     display: flex;
     align-items: center;
-    margin: 0;
+    margin-bottom: 15px;
+    padding-left: 20px;
   }
   .PMForm .container .description {
-    font-family: "Manrope";
+    font-family: "Libre Baskerville", serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 12px;
+    line-height: normal;
     letter-spacing: 0.25px;
     width: 350px;
     color: #404040;
+    padding-left: 20px;
     opacity: 0.99;
+  }
+  footer .blocks div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .socialmedia {
+    margin: 0;
+  }
+  #footercitate {
+    font-size: 14px;
+    text-align: center;
+  }
+  .switch {
+    width: auto;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -62,7 +62,7 @@ var language = {
             "home": "Acasa",
             "about": "Despre Noi",
             "tour": "Turul Lumii",
-            "staff": "Personal",
+            "staff": "Membrii Ansamblului",
             "repert": "Repertoriu",
             "contact": "Contactează-ne"
         },
