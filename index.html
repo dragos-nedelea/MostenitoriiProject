@@ -597,35 +597,35 @@
                         <div class="container">
                             <div class="Form">
                                 <!-- <img class="formHead" src="./resources/pics/formHead.jpg" alt=""> -->
-                                <form action=" ">
+                                <form id="form" action="https://formsubmit.co/mostenitorii_riscani@yahoo.com" method="POST">
 
                                     <div class="col vector5">
                                         <div class="vector5">
 
-                                            <input id="surname" type="text" placeholder="First Name">
+                                            <input class="form-control" id="surname" type="text" name="name" placeholder="First Name">
 
                                         </div>
                                         <div class="vector5">
 
-                                            <input id="Name" type="text" placeholder="Last Name">
+                                            <input class="form-control" id="Name" type="text" name="surname" placeholder="Last Name">
 
                                         </div>
                                     </div>
                                     <div class="vector6">
-                                        <input id="email" type="email" placeholder="E-mail address">
+                                        <input class="form-control" id="email" type="email" name="email" placeholder="E-mail address">
 
                                     </div>
                                     <div class="vector7">
-                                        <input id="Pnumb" type="tel" placeholder="Phone Number">
+                                        <input class="form-control" id="Pnumb" type="tel" name="phone" placeholder="Phone Number">
 
                                     </div>
                                     <div class="vector8">
-                                        <textarea id="YrMess" class="usermess" type="text"
+                                        <textarea id="YrMess" name="Message" class="usermess form-control" type="text"
                                             placeholder="Your Message"></textarea>
 
                                     </div>
                                     <div class="check">
-                                        <input class="checkbox" type="checkbox" id="chbox">
+                                        <input class="checkbox form-control" type="checkbox" id="chbox">
                                         <p id="chbText" class="checkP">I agree with <span> <a class="TermsCond"
                                                     href="">terms and
                                                     conditins.</a></span></p>
@@ -660,13 +660,13 @@
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 hidden">
                     <h5 id="products" class="text-uppercase mb-4 font-weight-bold text-warning">Products</h5>
                     <p>
-                        <a href="https://www.facebook.com/mostenitoriiriscani/videos" target="_blank" class="text-white" style="text-decoration: none;"> More Videos</a>
+                        <a class="moreanchor" href="https://www.facebook.com/mostenitoriiriscani/videos" target="_blank" class="text-white" style="text-decoration: none;"> More Videos</a>
                     </p>
                     <!-- <p>
                         <a href="#" class="text-white" style="text-decoration: none;"> Our Friends</a>
                     </p> -->
                     <p>
-                        <a href="./pages/gallery.html" class="text-white" style="text-decoration: none;"> Gallery</a>
+                        <a class="galanchor" href="./pages/gallery.html" class="text-white" style="text-decoration: none;"> Gallery</a>
                     </p>
                 </div>
 
@@ -693,7 +693,7 @@
                         <i class="bi bi-geo-fill"></i> Str. Al. Plămădeală
                     </p>
                     <p>
-                        <i class="bi bi-envelope-fill"></i> mostenitorii_riscani@yahoo.com
+                        <a class="gmail" href="#scrollspyHeading6"><i class="bi bi-envelope-fill"></i> mostenitorii_riscani@yahoo.com</a> 
                     </p>
                     <a class="phone" href="tel:069020925">
                         <i class="bi bi-telephone-fill"></i> +373 690-20-925

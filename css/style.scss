@@ -161,6 +161,16 @@ footer {
     color: #fec400;
 }
 
+.gmail {
+    text-decoration: none;
+    color: #EFEFEF;
+    transition: .5s;
+}
+
+.gmail:hover {
+    color: #fec400;
+}
+
 
 
 .socialmedia {
@@ -430,6 +440,23 @@ footer {
     transform: scale(1.1, 1.1) !important;
 }
 
+.galanchor {
+    color: #EFEFEF;
+    transition: .5s;
+}
+
+.galanchor:hover {
+    color: #fec400;
+}
+
+.moreanchor {
+    color: #EFEFEF;
+    transition: .5s;
+}
+
+.moreanchor:hover {
+    color: #fec400;
+}
 
 
 
