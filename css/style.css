@@ -108,6 +108,16 @@ footer {
   padding: 0px;
 }
 
+.phone {
+  text-decoration: none;
+  color: #EFEFEF;
+  transition: 0.5s;
+}
+
+.phone:hover {
+  color: #fec400;
+}
+
 .socialmedia {
   display: flex;
   align-items: center;
@@ -143,6 +153,8 @@ footer {
   color: #212529;
   text-shadow: 3px 3px 4px gray;
   font-family: "Eczar", serif;
+  font-style: italic;
+  width: 570px;
 }
 
 .section1,
@@ -172,6 +184,7 @@ footer {
 .cards img {
   border-radius: 15px;
   height: 425px;
+  transition: 1s !important;
 }
 .cards .card {
   border-radius: 15px;
@@ -281,30 +294,32 @@ footer {
 }
 
 #app {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  align-items: center;
+  display: flex;
 }
 
 .title {
-  grid-column: 1/-1;
-  grid-row: 1;
   font-family: "Libre Baskerville", serif;
   font-size: 8vw;
   width: 100%;
   z-index: 2;
+  width: 35%;
 }
 
-.image {
-  grid-row: 1;
-  grid-column: 2;
-  margin-left: -2rem;
-  opacity: 0.7;
-}
 .image img {
-  display: block;
-  width: 90%;
-  height: auto;
+  border-radius: 15px;
+}
+
+.galleryMain {
+  padding: 100px;
+}
+.galleryMain img {
+  height: 100%;
+  transition: 1s;
+  border-radius: 15px;
+}
+
+.gall:hover {
+  transform: scale(1.1, 1.1) !important;
 }
 
 .hidden {
@@ -367,11 +382,6 @@ footer {
 
 .hidden:nth-child(12) {
   transition-delay: 2400ms;
-}
-
-.videoInsert {
-  width: 893px;
-  height: 480px;
 }
 
 .Form {
@@ -886,6 +896,9 @@ footer {
   .repSection .repContainer p {
     font-size: 13px;
   }
+  .DanceTitle {
+    padding: 10px 0 0 0;
+  }
   .cards {
     flex-flow: column;
   }
@@ -955,5 +968,32 @@ footer {
   }
   .switch {
     width: auto;
+  }
+  .navbar-scrolled {
+    background-color: #212529;
+    transition: all 0.5s;
+    border-radius: 0 0 20px 20px;
+  }
+  #scrollspyHeading3 p {
+    color: #212529;
+    text-shadow: 3px 3px 4px gray;
+    font-family: "Eczar", serif;
+    font-style: italic;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  #app {
+    display: flex;
+  }
+  .title {
+    grid-column: 1/-1;
+    grid-row: 1;
+    font-size: 8vw;
+    width: 35%;
+    z-index: 2;
+  }
+  #Map1,
+  #Map2 {
+    width: 150px !important;
   }
 }/*# sourceMappingURL=style.css.map */

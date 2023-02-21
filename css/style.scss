@@ -151,6 +151,16 @@ footer {
 
 }
 
+.phone {
+    text-decoration: none;
+    color: #EFEFEF;
+    transition: .5s;
+}
+
+.phone:hover {
+    color: #fec400;
+}
+
 
 
 .socialmedia {
@@ -200,6 +210,8 @@ footer {
         color: #212529;
         text-shadow: 3px 3px 4px gray;
         font-family: 'Eczar', serif;
+        font-style: italic;
+        width: 570px;
     }
 }
 
@@ -240,6 +252,8 @@ footer {
     img {
         border-radius: 15px;
         height: 425px;
+        transition: 1s !important;
+
     }
 
     .card {
@@ -258,6 +272,8 @@ footer {
 
 .card:hover {
     transform: scale(1.1, 1.1) !important;
+
+
 }
 
 .nav-item::after {
@@ -368,9 +384,8 @@ footer {
 
 
 #app {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    align-items: center;
+    display: flex;
+    // align-items: center;
     // padding-bottom: 4vmin;
     // height: 90vh;
     // width: 100%;
@@ -379,34 +394,40 @@ footer {
 }
 
 .title {
-    grid-column: 1 / -1;
-    grid-row: 1;
-
     font-family: 'Libre Baskerville', serif;
     font-size: 8vw;
     width: 100%;
     z-index: 2;
+    width: 35%;
 
 }
 
 
 .image {
-    grid-row: 1;
-    grid-column: 2;
-    margin-left: -2rem;
-    opacity: 0.7;
+
+    // margin-left: -2rem;
+    // opacity: 0.7;
 
     img {
-        display: block;
-        width: 90%;
-        height: auto;
-
+        border-radius: 15px;
     }
 
 }
 
+.galleryMain {
+    padding: 100px;
 
+    img {
+        height: 100%;
+        transition: 1s;
+        border-radius: 15px;
 
+    }
+}
+
+.gall:hover {
+    transform: scale(1.1, 1.1) !important;
+}
 
 
 
@@ -474,34 +495,7 @@ footer {
     transition-delay: 2400ms;
 }
 
-//------------------------------Accordion Stylization------------------------
-
-.videoInsert {
-    width: 893px;
-    height: 480px;
-}
-
-// .flexible-container {
-//     position: relative;
-//     padding-bottom: 56.25%;
-//     padding-top: 30px;
-//     height: 0;
-//     overflow: hidden;
-//   }
-
-//   .flexible-container iframe,
-//   .flexible-container object,
-//   .flexible-container embed {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//   }
-
-//--------------------------------------------------------------------------- 
-
-// ---------------------------Join thr Ansemble------------------------------
+// ---------------------------Join the Ansemble------------------------------
 
 
 // .formHead {
@@ -1004,18 +998,18 @@ footer {
         display: flex;
         flex-direction: column;
         margin: 0 0 75px 0;
-       align-items: center;
-    
+        align-items: center;
+
         div:nth-child(1) {
             width: 100%;
         }
-    
+
         div:nth-child(2) {
             width: 100%;
             padding: 0;
-            
+
         }
-    
+
         p {
             font-size: 13px;
         }
@@ -1033,6 +1027,10 @@ footer {
                 font-size: 13px;
             }
         }
+    }
+
+    .DanceTitle {
+        padding: 10px 0 0 0;
     }
 
     // -------------------------------------------------------------------------
@@ -1062,7 +1060,7 @@ footer {
     }
 
 
-   .section1 {
+    .section1 {
 
         p {
             font-family: 'Eczar', serif;
@@ -1144,5 +1142,50 @@ footer {
     .switch {
         width: auto;
     }
+
+    .navbar-scrolled {
+        background-color: #212529;
+        transition: all .5s;
+        // max-width: 80%;
+        border-radius: 0 0 20px 20px;
+        // height: 70px;
+    }
+
+    #scrollspyHeading3 {
+        p {
+            color: #212529;
+            text-shadow: 3px 3px 4px gray;
+            font-family: 'Eczar', serif;
+            font-style: italic;
+            width: fit-content;
+        }
+    }
+
+    #app {
+        // display: grid;
+        // grid-template-columns: 1fr 2fr;
+        // align-items: center;
+        // padding-bottom: 4vmin;
+        // color: #3a3535;
+
+        display: flex;
+    }
+
+    .title {
+        grid-column: 1 / -1;
+        grid-row: 1;
+
+        // font-family: "Prata", serif;
+        font-size: 8vw;
+        width: 35%;
+        z-index: 2;
+
+    }
+
+    #Map1,
+    #Map2 {
+        width: 150px !important;
+    }
+
 
 }

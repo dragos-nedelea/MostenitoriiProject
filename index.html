@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Mostenitorii Web Site">
+    <meta name="keywords" content="Mostenitorii, Dans, popor, dansuri populare, joc de doi">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -76,10 +78,11 @@
                                         data-bs-target=".navbar-collapse.show" data-reload> ENG</a></li>
                             </ul>
                         </ul>
-                        <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                        <!-- <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"
+                                checked>
                             <img class="swIcon" src="./resources/icons/sun.png" alt="">
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -166,7 +169,9 @@
                 <section id="scrollspyHeading2" class="section1">
 
                     <h4 id="SectionTitle1" class="hidden">About Us</h4>
-                    <p class="hidden" style="font-family: 'Eczar', serif;">The folk dances, together with the songs, legends, folk poetry, traditions are our
+                    <p id="aboutUs" class="hidden" style="font-family: 'Eczar', serif;">The folk dances, together with
+                        the songs,
+                        legends, folk poetry, traditions are our
                         national treasure -the treasure of folk pearls inherited from our ancestors. It is considered,
                         and we agree with this opinion, that the dance is the hidden language of our soul, or, in other
                         words, the visualization of our ardor and the most sublime spiritual impulses.
@@ -206,40 +211,32 @@
                         costume, our nation's songs and music.
 
                         The ensemble of folk dances Mostenitorii, was founded in 1994 and it had a small team- only 16
-                        children and teenagers. In three years, in 1997, having already 48 members the team became
-                        winner of the national festival for children Alunelul
-
-                        The declared - but also proven! - mission of the ensemble is to valorize the traditional
-                        culture, the national dress, the costumes, the folk traditions and games that are characteristic
-                        for the region we are representing. The scions of the strong tree called Mostenitorii
-                        contributed and are fully contributing through dedication, talent and love towards dance to the
-                        preservation of nation's inheritance.
-
-                        In a relatively short period of time the team advanced rapidly, becoming one of the best
-                        ensembles of such a profile (children) in the country and, respectively, enjoying the
-                        appreciation of the public. The list of successes comprise: the honorific title model artistic
-                        ensemble, laureate at several national and international contests and festivals. During two
-                        decades of activity (initially, Circle of folk dances from the Center of Creation for Children
-                        from Riscani town), 400 children were taught in the ensemble Mostenitorii. At present the
-                        ensemble is attended by 140 children of 6-19 years old, divided, in accordance to the age, into
-                        three choreographic groups: preparatory, medium and high. The team presented hundreds of shows
-                        on the most important stages in country and abroad and appeared for numerous times on local and
-                        international TV.
-
-                        The actual repertoire of the ensemble consists of folk dances which reflect the most famous
-                        traditions, customs and habits: the wedding dance Zestrea, Capra, Caiutii, the procession of
-                        carol singers, the famous Ball of the conductors etc. They delight the eyes of the spectators in
-                        the concert programs and get the deserved applauses as the dance is a good opportunity for the
-                        assertion of national identity.
-
+                        children and teenagers.
+                        In three years, in 1997, having already 48 members the team became winner of the national
+                        festival for children Alunelul The declared - but also proven! - mission of the ensemble is to
+                        valorize the traditional culture, the national dress, the costumes, the folk traditions and
+                        games that are characteristic for the region we are representing. The scions of the strong tree
+                        called Mostenitorii contributed and are fully contributing through dedication, talent and love
+                        towards dance to the preservation of nation's inheritance. In a relatively short period of time
+                        the team advanced rapidly, becoming one of the best ensembles of such a profile (children) in
+                        the country and, respectively, enjoying the appreciation of the public. The list of successes
+                        comprise: the honorific title model artistic ensemble, laureate at several national and
+                        international contests and festivals. During two decades of activity (initially, Circle of folk
+                        dances from the Center of Creation for Children from Riscani town), 400 children were taught in
+                        the ensemble Mostenitorii. At present the ensemble is attended by 140 children of 6-19 years
+                        old, divided, in accordance to the age, into three choreographic groups: preparatory, medium and
+                        high. The team presented hundreds of shows on the most important stages in country and abroad
+                        and appeared for numerous times on local and international TV. The actual repertoire of the
+                        ensemble consists of folk dances which reflect the most famous traditions, customs and habits:
+                        the wedding dance Zestrea, Capra, Caiutii, the procession of carol singers, the famous Ball of
+                        the conductors etc. They delight the eyes of the spectators in the concert programs and get the
+                        deserved applauses as the dance is a good opportunity for the assertion of national identity.
                         The beauty of the dance is completed and better valorized by the national costume. Each member
                         of the ensemble, former or actual, has his own costume, which, obviously, is a genuine one. The
                         ensemble of folk dances Mostenitorii from Riscani town through everything it is doing,
-
                         contributes to the preservation and valorization of the cultural richness and traditional
-                        choreographic values.
-
-                        The talent, dedication and perseverance are the elements that define our team.</p>
+                        choreographic values. The talent, dedication and perseverance are the elements that define our
+                        team.</p>
                 </section>
 
                 <section id="scrollspyHeading3" class="section2">
@@ -248,163 +245,84 @@
                         <div class="title">
                             <div>
                                 <div class="hidden">
-                                    <p style="font-family: 'Eczar', serif;"><i>Hover over</i></p>
+                                    <p id="Map1"><i>International</i></p>
                                 </div>
                                 <div class="hidden">
-                                    <p style="font-family: 'Eczar', serif;"><i>the pins</i></p>
+                                    <p id="Map2"><i>festivals</i></p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="image">
-                            <img src='./resources/pics/ImageMap.png' alt=''>
+                            <img class="img-fluid" src="./resources/pics/ImageMap.png" usemap="#image-map">
+                            <map name="image-map">
+                                <map name="image-map">
+                                    <area target="_self" alt="Zonguldak, Turcia (1998)" title="Zonguldak, Turcia (1998)"
+                                        coords="528,390,523,375,535,368,544,359,557,361,558,371,549,377,548,390,540,394,533,391"
+                                        shape="poly">
+                                    <area target="_self" alt="Ialyssos,Rodos, Grecia (2008)"
+                                        title="Ialyssos,Rodos, Grecia (2008)"
+                                        coords="479,469,478,452,483,444,491,446,497,433,510,434,513,446,502,452,502,463,492,467,486,465"
+                                        shape="poly">
+                                    <area target="_self" alt="Cahul, Moldova (2006,2008)"
+                                        title="Cahul, Moldova (2006,2008)"
+                                        coords="488,314,483,304,488,292,498,294,503,280,517,284,518,296,509,303,509,312,500,315"
+                                        shape="poly">
+                                    <area target="_self" alt="Hartberg, Austria (1999,2003)"
+                                        title="Hartberg, Austria (1999,2003)"
+                                        coords="332,289,331,281,331,270,341,268,348,257,360,257,365,269,355,275,356,284,348,291"
+                                        shape="poly">
+                                    <area target="_self" alt="Villach, Austria (2000)" title="Villach, Austria (2000)"
+                                        coords="301,295,298,284,302,273,311,274,315,263,329,262,330,276,320,282,324,289,316,296"
+                                        shape="poly">
+                                    <area target="_self" alt="Vorona, Romănia (2001)" title="Vorona, Romănia (2001)"
+                                        coords="463,294,459,285,462,275,469,274,474,275,476,261,490,261,494,275,483,280,484,290,475,297"
+                                        shape="poly">
+                                    <area target="_self" alt="Artek, Ucraina (2002)" title="Artek, Ucraina (2002)"
+                                        coords="446,248,443,239,446,228,455,227,461,215,474,216,477,231,464,236,457,242,454,250"
+                                        shape="poly">
+                                    <area target="_self" alt="Billund, Danemarca (2004)"
+                                        title="Billund, Danemarca (2004)"
+                                        coords="264,124,260,113,264,101,273,101,278,90,292,91,295,105,285,109,285,119,277,125"
+                                        shape="poly">
+                                    <area target="_self" alt="Haskovo, Bulgaria (2006)" title="Haskovo, Bulgaria (2006)"
+                                        coords="442,373,439,359,445,352,454,355,458,341,471,342,472,357,461,361,463,369,452,376"
+                                        shape="poly">
+                                    <area target="_self" alt="Sankt Petersburg, Rusia (2008)"
+                                        title="Sankt Petersburg, Rusia (2008)"
+                                        coords="521,39,518,27,522,16,531,18,537,5,550,7,552,21,540,25,544,33,536,40"
+                                        shape="poly">
+                                    <area target="_self" alt="Vijnița, Cernăuți, Ucraina (2008)"
+                                        title="Vijnița, Cernăuți, Ucraina (2008)"
+                                        coords="443,274,440,264,444,254,452,256,461,242,471,245,474,256,463,260,465,270,455,277"
+                                        shape="poly">
+                                    <area target="_self" alt="Primorsko, Bulgaria (2009)"
+                                        title="Primorsko, Bulgaria (2009)"
+                                        coords="476,368,472,354,478,346,486,349,492,335,504,337,505,351,495,353,498,362,490,370"
+                                        shape="poly">
+                                    <area target="_self" alt="Cracovia, Polonia (2009)" title="Cracovia, Polonia (2009)"
+                                        coords="382,221,378,211,382,199,390,198,397,189,412,191,412,204,404,209,403,219,395,225"
+                                        shape="poly">
+                                    <area target="_self" alt="Budapesta, Ungaria (2011,2013)"
+                                        title="Budapesta, Ungaria (2011,2013)"
+                                        coords="378,285,375,273,378,263,388,264,392,251,407,254,409,267,399,272,401,279,392,287"
+                                        shape="poly">
+                                    <area target="_self" alt="Hanioti, Grecia (2011,2012)"
+                                        title="Hanioti, Grecia (2011,2012)"
+                                        coords="417,407,413,391,419,383,428,386,432,373,446,374,447,388,436,392,439,402,430,408"
+                                        shape="poly">
+                                    <area target="_self" alt="Praga, Cehia (2013)" title="Praga, Cehia (2013)"
+                                        coords="316,243,312,232,315,223,327,221,332,210,346,211,347,225,337,229,338,239,329,245"
+                                        shape="poly">
+                                    <area target="_self" alt="Uzice, Serbia (2014)" title="Uzice, Serbia (2014)"
+                                        coords="388,345,385,334,390,322,400,324,402,312,417,312,420,328,408,332,412,339,403,348"
+                                        shape="poly">
+                                    <area target="_self" alt="Tassos, Grecia (2014)" title="Tassos, Grecia (2014)"
+                                        coords="451,398,448,390,449,378,461,375,468,363,478,370,482,379,471,384,473,393,465,399"
+                                        shape="poly">
+                                </map>
                         </div>
                     </div>
-
-
-                    <!-- <div class="accordion hidden" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    1998, Bălți - festivalul județean "Cine joacă horele"- <b>premiul mare</b>
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                                data-bs-parent="#accordionExample">
-
-                                <div class="flexible-container">
-                                    <video
-                                        src="./resources/ENGLISH SPEECH _ ED SHEERAN_ Embrace Your Weirdness (English Subtitles).mp4"
-                                        width="100%" height="auto" controls></video>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Accordion Item #2
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <strong>This is the second item's accordion body.</strong> It is hidden by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                    our default variables. It's also worth noting that just about any HTML can go within
-                                    the <code>.accordion-body</code>, though the transition does limit overflow.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Accordion Item #2
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <strong>This is the second item's accordion body.</strong> It is hidden by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                    our default variables. It's also worth noting that just about any HTML can go within
-                                    the <code>.accordion-body</code>, though the transition does limit overflow.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Accordion Item #2
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <strong>This is the second item's accordion body.</strong> It is hidden by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                    our default variables. It's also worth noting that just about any HTML can go within
-                                    the <code>.accordion-body</code>, though the transition does limit overflow.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Accordion Item #2
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <strong>This is the second item's accordion body.</strong> It is hidden by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                    our default variables. It's also worth noting that just about any HTML can go within
-                                    the <code>.accordion-body</code>, though the transition does limit overflow.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Accordion Item #2
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <strong>This is the second item's accordion body.</strong> It is hidden by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                    our default variables. It's also worth noting that just about any HTML can go within
-                                    the <code>.accordion-body</code>, though the transition does limit overflow.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Accordion Item #3
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
-                                    until the collapse plugin adds the appropriate classes that we use to style each
-                                    element. These classes control the overall appearance, as well as the showing and
-                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-                                    our default variables. It's also worth noting that just about any HTML can go within
-                                    the <code>.accordion-body</code>, though the transition does limit overflow.
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-
-
-                    <!-- Image Map Generated by http://www.image-map.net/ -->
-                    <!-- <img src="./resources/pics/2.jpg" usemap="#image-map">
-
-<map name="image-map">
-    <area target="_top" alt="1982" title="1982" href="https://dragos-nedelea.github.io/PudraProject/" coords="689,484,726,484,734,528,734,557,719,574,696,572,688,535" shape="poly">
-</map> -->
-
-
                 </section>
 
                 <section id="scrollspyHeading4" class="section3">
@@ -413,34 +331,38 @@
                         <div class="card col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 hidden" style="width: 18rem;">
                             <img src="./resources/pics/Elena.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title" style="font-family: 'Libre Baskerville', serif;"><b>Elena Crețu</b></h5>
+                                <h5 class="card-title" style="font-family: 'Libre Baskerville', serif;"><b>Elena
+                                        Crețu</b></h5>
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item fst-italic">Artistic leader/coreographer</li>
+                                    <li class="list-group-item fst-italic" id="elenaDesc">Artistic leader/choreographer
+                                    </li>
                                 </ul>
-                                <p class="card-text" style="font-family: 'Eczar', serif;">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
+                                <p class="card-text" style="font-family: 'Eczar', serif;" id="elenaCitate">The love for
+                                    dances is spread by her cautiously.</p>
                             </div>
                         </div>
                         <div class="card col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 hidden" style="width: 18rem;">
                             <img src="./resources/pics/Mihai.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title" style="font-family: 'Libre Baskerville', serif;"><b>Mihai Sacaliuc</b></h5>
+                                <h5 class="card-title" style="font-family: 'Libre Baskerville', serif;"><b>Mihai
+                                        Sacaliuc</b></h5>
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item fst-italic">Artistic musician</li>
+                                    <li class="list-group-item fst-italic" id="mihaiDesc">Artistic musician</li>
                                 </ul>
-                                <p class="card-text" style="font-family: 'Eczar', serif;">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
+                                <p class="card-text" style="font-family: 'Eczar', serif;" id="mihaiCitate">His music
+                                    inspire and enlighten us to dance.</p>
                             </div>
                         </div>
                         <div class="card col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 hidden" style="width: 18rem;">
                             <img src="./resources/pics/Nina.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title" style="font-family: 'Libre Baskerville', serif;"><b>Nina Efrim</b></h5>
+                                <h5 class="card-title" style="font-family: 'Libre Baskerville', serif;"><b>Nina
+                                        Efrim</b></h5>
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item fst-italic">Artistic coreographer</li>
+                                    <li class="list-group-item fst-italic" id="ninaDesc">Artistic choreographer</li>
                                 </ul>
-                                <p class="card-text" style="font-family: 'Eczar', serif;">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
+                                <p class="card-text" style="font-family: 'Eczar', serif;" id="ninaCitate">She's the one
+                                    giving us the example to follow.</p>
                             </div>
                         </div>
                     </div>
@@ -480,14 +402,14 @@
                                             <img src="./resources/pics/rep7.jpg" class="rep1odd img-fluid" alt="...">
                                         </div>
                                         <div class="hidden">
-                                            <h1 style="font-family: 'Libre Baskerville', serif;"><i>"Coșerul și Hangul"</i></h1>
-                                            <p style="font-family: 'Eczar', serif;">Este un dans țărănesc care reunește într-un cerc mare întreaga adunare.
-                                                Dansatorii se
-                                                țin de mână, făcând 3 pași pe diagonală în față, S-D-S, urmați de o
-                                                bătaie cu
-                                                dreptul, apoi în spate, trei pași D-S-D,o bătaie cu stângul, totodată
-                                                învârtind
-                                                cercul, în principiu invers sensului acelor ceasului</p>
+                                            <h1 class="DanceTitle" style="font-family: 'Libre Baskerville', serif;">
+                                                <i>"Coșerul și Hangul"</i>
+                                            </h1>
+                                            <p id="coserHang" style="font-family: 'Eczar', serif;">
+                                                Traditional dance in which they caught each other
+                                                the men, who really had a coordination
+                                                of muscles, arms, legs, head, very good, very
+                                                developed. The men who knew this dance very well were caught.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -496,17 +418,14 @@
                                 <div class="repSectioncar">
                                     <div class=" repContainer">
                                         <div class="hidden">
-                                            <h1 style="font-family: 'Libre Baskerville', serif;"><i>"Ciuleandra"</i></h1>
-                                            <p style="font-family: 'Eczar', serif;">Este un dans țărănesc care reunește într-un cerc mare întreaga
-                                                adunare.
-                                                Dansatorii se
-                                                țin de mână, făcând 3 pași pe diagonală în față, S-D-S, urmați de o
-                                                bătaie
-                                                cu
-                                                dreptul, apoi în spate, trei pași D-S-D,o bătaie cu stângul,
-                                                totodată
-                                                învârtind
-                                                cercul, în principiu invers sensului acelor ceasului</p>
+                                            <h1 style="font-family: 'Libre Baskerville', serif;"><i>"Ciuleandra"</i>
+                                            </h1>
+                                            <p id="ciuleandra" style="font-family: 'Eczar', serif;">
+                                                Old folk dance, with origins in
+                                                Muntenia Subcarpathia, is considered a Dionysian dance, in which
+                                                each of the participants is slowly attracted by the frenzy of the
+                                                rhythm.
+                                            </p>
                                         </div>
                                         <div class="hidden">
                                             <img src="./resources/pics/rep8.jpg" class="rep2even img-fluid" alt="...">
@@ -521,12 +440,18 @@
                                             <img src="./resources/pics/rep5.jpg" class="rep1odd img-fluid" alt="...">
                                         </div>
                                         <div class="hidden">
-                                            <h1 style="font-family: 'Libre Baskerville', serif;"><i>"Polca din bătrâni"</i></h1>
-                                            <p style="font-family: 'Eczar', serif;">Dans ce are caracteristic pași înainte și înapoi, Însăși strigăturile
-                                                acestui dans
-                                                sună astfel: "Și-nainte și-napoi, c-așai polca pe la noi,<br>Și la
-                                                dreapta și la
-                                                stânga, uite-așa se joacă mândra!"</p>
+                                            <h1 class="DanceTitle" style="font-family: 'Libre Baskerville', serif;">
+                                                <i>"Polca din bătrâni"</i>
+                                            </h1>
+                                            <p id="polca" style="font-family: 'Eczar', serif;">
+                                                A characteristic dance
+                                                tread
+                                                back and forth, The very cries
+                                                this dance
+                                                it sounds like this: "And-forward and-back, that's how the polka is with
+                                                us, And to
+                                                right and to
+                                                left, look, that's how pride plays!".</p>
                                         </div>
                                     </div>
                                 </div>
@@ -535,16 +460,12 @@
                                 <div class="repSectioncar">
                                     <div class=" repContainer">
                                         <div class="hidden">
-                                            <h1 style="font-family: 'Libre Baskerville', serif;"><i>"Suita de dansuri românești"</i></h1>
-                                            <p style="font-family: 'Eczar', serif;">Este un dans țărănesc care reunește într-un cerc mare întreaga
-                                                adunare.
-                                                Dansatorii se
-                                                țin de mână, făcând 3 pași pe diagonală în față, S-D-S, urmați de o
-                                                bătaie cu
-                                                dreptul, apoi în spate, trei pași D-S-D,o bătaie cu stângul,
-                                                totodată
-                                                învârtind
-                                                cercul, în principiu invers sensului acelor ceasului</p>
+                                            <h1 style="font-family: 'Libre Baskerville', serif;"><i>"Suita de dansuri
+                                                    românești"</i></h1>
+                                            <p id="suita" style="font-family: 'Eczar', serif;">
+                                                In his own way he dances calmly, with steps
+                                                back and forth, danced in pairs, at the end of which the tempo se
+                                                modifies, the so-called "Floricica - game of two".</p>
                                         </div>
                                         <div class="hidden">
                                             <img src="./resources/pics/rep6.jpg" class="rep2even img-fluid" alt="...">
@@ -559,15 +480,20 @@
                                             <img src="./resources/pics/rep3.jpg" class="rep1odd img-fluid" alt="...">
                                         </div>
                                         <div class="hidden">
-                                            <h1 style="font-family: 'Libre Baskerville', serif;"><i>"Dans țigănesc"</i></h1>
-                                            <p style="font-family: 'Eczar', serif;">La timpul său dansurile „Ţigăneasca” au fost preluate de la bulgari,
-                                                ruşi, armeni şi
-                                                ţigani. Împrumutând elementele şi ritmurile separate din la dansurile
-                                                altor popoare,
-                                                moldovenii le interpretează în felul lor – cu mult foc, temperament şi
-                                                într-un mod
-                                                cu totul special. Nici unul dintre popoarele sus-numite nu au dansuri
-                                                similare.</p>
+                                            <h1 class="DanceTitle" style="font-family: 'Libre Baskerville', serif;">
+                                                <i>"Dans țigănesc"</i>
+                                            </h1>
+                                            <p id="tiganescu" style="font-family: 'Eczar', serif;">
+                                                During his time the "Gypsy" dances
+                                                were taken over from the Bulgarians,
+                                                Russians, Armenians and
+                                                gypsies. Borrowing the separate elements and rhythms from the dances
+                                                other peoples,
+                                                the Moldovans interpret them in their own way - with a lot of fire,
+                                                temperament and
+                                                in a way
+                                                very special. None of the aforementioned peoples have dances
+                                                similar.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -577,12 +503,14 @@
                                     <div class=" repContainer">
                                         <div class="hidden">
                                             <h1 style="font-family: 'Libre Baskerville', serif;"><i>"Joc Mare"</i></h1>
-                                            <p style="font-family: 'Eczar', serif;">Joc care reunește într-un cerc mare întreaga adunare. Dansatorii se
-                                                țin de mână, mergând pe diagonală separându-se în 2 linii, urmat de joc
-                                                în pereche,
-                                                apoi plecare în spate,plecând la stânga dansatorii se închină
-                                                publicului, apoi
-                                                mișcarea se repetă până la formarea unui semicerc.</p>
+                                            <p id="jocMare" style="font-family: 'Eczar', serif;">
+                                                Game that gathers in a big circle
+                                                the whole assembly. The dancers
+                                                hold hands, walking diagonally separating into 2 lines, followed by game
+                                                in pairs
+                                                then going backwards, going to the left the dancers bow
+                                                the public, then
+                                                the movement is repeated until a semicircle is formed.</p>
                                         </div>
                                         <div class="hidden">
                                             <img src="./resources/pics/rep4.jpg" class="rep2even img-fluid" alt="...">
@@ -597,14 +525,19 @@
                                             <img src="./resources/pics/rep1.jpg" class="rep1odd img-fluid" alt="...">
                                         </div>
                                         <div class="hidden">
-                                            <h1 style="font-family: 'Libre Baskerville', serif;"><i>"Hora de Sărbătoare"</i></h1>
-                                            <p style="font-family: 'Eczar', serif;">Este un dans țărănesc care reunește într-un cerc mare întreaga adunare.
-                                                Dansatorii se
-                                                țin de mână, făcând 3 pași pe diagonală în față, S-D-S, urmați de o
-                                                bătaie cu
-                                                dreptul, apoi în spate, trei pași D-S-D,o bătaie cu stângul, totodată
-                                                învârtind
-                                                cercul, în principiu invers sensului acelor ceasului</p>
+                                            <h1 class="DanceTitle" style="font-family: 'Libre Baskerville', serif;">
+                                                <i>"Hora de Sărbătoare"</i>
+                                            </h1>
+                                            <p id="horaSarb" style="font-family: 'Eczar', serif;">
+                                                It is a peasant dance that brings people together
+                                                in a large circle the whole assembly.
+                                                The dancers
+                                                holding hands, taking 3 diagonal steps forward, L-R-L, followed by o
+                                                fight with
+                                                right, then back, three steps R-L-R, a beat with the left, at the same
+                                                time
+                                                turning
+                                                the circle, basically counterclockwise.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -614,19 +547,21 @@
                                     <div class=" repContainer">
                                         <div class="hidden">
                                             <h1 style="font-family: 'Libre Baskerville', serif;"><i>"Arcanul"</i></h1>
-                                            <p style="font-family: 'Eczar', serif;">Dansul Arcanul se executa in horă deschisă, pasul spre inainte făcându-se
-                                                cu piciorul
-                                                stâng ,mișcat prin spate ,tainic ,cu aceeași pași continua jocul
-                                                cuprinzând in
-                                                coregrafia sa mersul șarpelui si simbolul acestuia. Forma sa exprimă
-                                                sacrificiul, şi
-                                                o putem interpreta în mai multe feluri. Cele trei linii convergente pot
-                                                reprezenta o
-                                                suliţă, o rădăcină sau un om. Suliţa este arma zeului, şi în ipostaza sa
-                                                de patron
-                                                al războiului şi victoriei, promitea celor care purtau acest semn
-                                                izbândă şi
-                                                protecţie.</p>
+                                            <p id="arcan" style="font-family: 'Eczar', serif;">
+                                                The Arcanus dance was performed in chorus
+                                                open, taking a step forward
+                                                with the foot
+                                                left, moved behind, secretly, with the same steps, continue the game
+                                                comprising in
+                                                his choreography the snake walk and its symbol. The form to express
+                                                the sacrifice, and
+                                                we can interpret it in several ways. The three converging lines can
+                                                represent a
+                                                spear, a root or a man. The spear is the god's weapon, and in his pose
+                                                by patron
+                                                of war and victory, he promised those who wore this sign
+                                                win and
+                                                protection.</p>
                                         </div>
                                         <div class="hidden">
                                             <img src="./resources/pics/rep2.jpg" class="rep2even img-fluid" alt="...">
@@ -653,9 +588,10 @@
 
                     <div class="PMForm hidden" id="pnform">
                         <div class="container">
-                            <p class="title">Complete the form and become a dancer</p>
-                            <p class="description">We need you to help us maintain the traditions.
-                                Also, here are our <span><a class="TermsCond" href="">terms and conditions.</a></span>
+                            <p class="title" id="formTitle">Complete the form and become a dancer along with us</p>
+                            <p class="description" id="formDesc">We need you to help us maintain the traditions.
+                                Also, here are our <span><a class="TermsCond" href="" id="terms">terms and
+                                        conditions.</a></span>
                             </p>
                         </div>
                         <div class="container">
@@ -724,13 +660,13 @@
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 hidden">
                     <h5 id="products" class="text-uppercase mb-4 font-weight-bold text-warning">Products</h5>
                     <p>
-                        <a href="#" class="text-white" style="text-decoration: none;"> More Videos</a>
+                        <a href="https://www.facebook.com/mostenitoriiriscani/videos" target="_blank" class="text-white" style="text-decoration: none;"> More Videos</a>
                     </p>
-                    <p>
+                    <!-- <p>
                         <a href="#" class="text-white" style="text-decoration: none;"> Our Friends</a>
-                    </p>
+                    </p> -->
                     <p>
-                        <a href="#" class="text-white" style="text-decoration: none;"> Gallery</a>
+                        <a href="./pages/gallery.html" class="text-white" style="text-decoration: none;"> Gallery</a>
                     </p>
                 </div>
 
@@ -754,14 +690,14 @@
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 hidden">
                     <h5 id="fcontact" class="text-uppercase mb-4 font-weight-bold text-warning ">Contact</h5>
                     <p>
-                        <i class="bi bi-geo-fill"></i> Gavril Muzicescu 3, Moldova
+                        <i class="bi bi-geo-fill"></i> Str. Al. Plămădeală
                     </p>
                     <p>
-                        <i class="bi bi-envelope-fill"></i> kljalfad@gmail.com
+                        <i class="bi bi-envelope-fill"></i> mostenitorii_riscani@yahoo.com
                     </p>
-                    <p>
-                        <i class="bi bi-telephone-fill"></i> +373 056312464
-                    </p>
+                    <a class="phone" href="tel:069020925">
+                        <i class="bi bi-telephone-fill"></i> +373 690-20-925
+                    </a>
                     <p>
                         <i class="fas fa-home mr-3"></i>
                     </p>
@@ -771,8 +707,8 @@
 
         </div>
         <div class="disclaimer">
-            <div>Acest website a fost realizat în cadrul competiției ”Tekwill Junior Ambassadors” organizată de
-                proiectul ”Tekwill în Fiecare Școală” și nu reflectă neapărat opinia proiectului.</div>
+            <div id="disclaim">This website was made in the "Tekwill Junior Ambassadors" competition organized by
+                The project "Tekwill in each school" and does not necessarily reflect the opinion of the project.</div>
         </div>
 
     </footer>
