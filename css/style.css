@@ -316,6 +316,7 @@ footer {
   height: 100%;
   transition: 1s;
   border-radius: 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 15px 10px;
 }
 
 .gall:hover {
@@ -995,5 +996,8 @@ footer {
   #Map1,
   #Map2 {
     width: 150px !important;
+  }
+  .galleryMain {
+    padding: 75px 15px;
   }
 }/*# sourceMappingURL=style.css.map */
