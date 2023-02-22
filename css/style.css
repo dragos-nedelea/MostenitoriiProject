@@ -312,7 +312,7 @@ footer {
   font-size: 8vw;
   width: 100%;
   z-index: 2;
-  width: 35%;
+  width: 40%;
 }
 
 .image img {
@@ -871,6 +871,18 @@ footer {
   background-color: #fec400;
 }
 
+.videos {
+  width: 100%;
+}
+
+.accordion-button {
+  background-color: #EFEFEF !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: black !important;
+}
+
 @media screen and (max-width: 991px) {
   /* For mobile phones: */
   .navbar {
@@ -986,10 +998,12 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 15px;
   }
   .socialmedia {
     margin: 0;
+  }
+  .socialmedia a {
+    margin: 0 0 10px 0;
   }
   #footercitate {
     font-size: 14px;
@@ -1027,5 +1041,8 @@ footer {
   }
   .galleryMain {
     padding: 75px 15px;
+  }
+  .gall:hover {
+    transform: none !important;
   }
 }/*# sourceMappingURL=style.css.map */

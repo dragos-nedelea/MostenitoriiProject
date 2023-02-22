@@ -101,6 +101,9 @@ var language = {
         "disclaim": "Acest website a fost realizat în cadrul competiției ”Tekwill Junior Ambassadors” organizată de proiectul ”Tekwill în Fiecare Școală” și nu reflectă neapărat opinia proiectului.",
         "formTitle": "Completează formularul și devin-o dansator alături de noi",
         "formDesc": "Avem nevoie de tine pentru a ne ajuta să menținem tradițiile.",
+        "morevids": "Videouri",
+        "galId": "Galerie",
+
 
 
         //carousel section 
@@ -176,6 +179,8 @@ if (window.location.hash) {
         fcontact.textContent = language.ro.fcontact;
         oword.textContent = language.ro.oword;
         disclaim.textContent = language.ro.disclaim;
+        morevids.textContent = language.ro.morevids;
+        galId.textContent = language.ro.galId;
         // carousel section
         descr1.textContent = language.ro.descr1;
         descr2.textContent = language.ro.descr2;
