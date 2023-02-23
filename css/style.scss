@@ -408,7 +408,7 @@ footer {
     font-size: 8vw;
     width: 100%;
     z-index: 2;
-    width: 40%;
+    width: 35%;
 
 }
 
@@ -1082,6 +1082,12 @@ footer {
         flex-flow: column;
 
 
+    }
+
+    .card:hover {
+        transform: none !important;
+    
+    
     }
 
     #SectionTitle1,

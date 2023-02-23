@@ -140,7 +140,7 @@ var language = {
 
         //Our Wolrd Tour section
         "Map1": "Festivaluri",
-        "Map2": "internaționale",
+        "Map2": "mondiale",
 
 
 
