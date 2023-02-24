@@ -23,12 +23,12 @@ var dataReload = document.querySelectorAll("[data-reload]");
 var language = {
     ro: {
         // navbar
-        "home": "Acasa",
+        "home": "Acasă",
         "about": "Despre Noi",
         "tour": "Turul Lumii",
         "staff": "Membrii Ansamblului",
         "repert": "Repertoriu",
-        "contact": "Alăturăte echipei",
+        "contact": "Alătură-te echipei",
 
         //footer section 
         "footercitate": "Noi, cei ieșiți din popor, care am crescut legănati de aceste cântece, suntem datori a le păstra cu sfințenia cu care se păstrează moştenirea venită de la o națiune întreagă, trebuie să veghem lângă această comoară, căci ea fiind a poporului este şi a noastră. este a întregii suflări românești",

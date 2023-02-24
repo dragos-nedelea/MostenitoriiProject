@@ -627,14 +627,6 @@ footer {
 
 }
 
-.PMForm .container .description .TermsCond {
-    text-decoration: none;
-    color: #4743E0;
-    font-weight: bold;
-    cursor: pointer;
-
-}
-
 .PMForm .container .Form input {
     width: 308px;
     height: 40px;
@@ -675,13 +667,6 @@ footer {
 
     color: #404040;
 
-}
-
-.PMForm .container .Form .checkP .TermsCond {
-    text-decoration: none;
-    color: #4743E0;
-    font-weight: bold;
-    cursor: pointer;
 }
 
 .PMForm .container .Form .submitbtn {
@@ -924,7 +909,7 @@ footer {
     width: 25px;
     height: 25px;
     background-color: white;
-    border-radius: 15px;
+    border-radius: 15px !important;
     vertical-align: middle;
     border: 1px solid rgba(128, 128, 128, 0.323);
     appearance: none;
@@ -934,7 +919,7 @@ footer {
 }
 
 .checkbox:checked {
-    background-color: #fec400;
+    background-color: #fec400 !important;
 }
 
 // --------------------------------------------------------------------------

@@ -28,42 +28,21 @@ var dataReload = document.querySelectorAll("[data-reload]");
 
 // Language translations
 var language = {
-    ro1: {
-        // navbar
-        "home": "Acasa",
-        "about": "Despre Noi",
-        "tour": "Turul Lumii",
-        "staff": "Membrii Ansamblului",
-        "repert": "Repertoriu",
-        "contact": "Alăturăte echipei",
-
-        //footer section 
-        "footercitate": "Noi, cei ieșiți din popor, care am crescut legănati de aceste cântece, suntem datori a le păstra cu sfințenia cu care se păstrează moştenirea venită de la o națiune întreagă, trebuie să veghem lângă această comoară, căci ea fiind a poporului este şi a noastră. este a întregii suflări românești",
-        "usefullinks": "Linkuri utile",
-        "products": "Produse",
-        "fcontact": "Contactează-ne",
-        "oword": "Noi spunem",
-        "disclaim": "Acest website a fost realizat în cadrul competiției ”Tekwill Junior Ambassadors” organizată de proiectul ”Tekwill în Fiecare Școală” și nu reflectă neapărat opinia proiectului.",
-        "formTitle": "Completează formularul și devin-o dansator alături de noi:",
-        "formDesc": "Avem nevoie de tine pentru a ne ajuta să menținem tradițiile.",
-
-
-    },
     ro: {
         // navbar
-        "home": "Acasa",
+        "home": "Acasă",
         "about": "Despre Noi",
         "tour": "Turul Lumii",
         "staff": "Membrii Ansamblului",
         "repert": "Repertoriu",
-        "contact": "Alăturăte echipei",
+        "contact": "Alătură-te echipei",
 
         //Staff section 
         "SectionTitle1": "Despre noi",
         "SectionTitle2": "Turul lumii",
         "SectionTitle3": "Membrii Ansamblului",
         "SectionTitle4": "Repertoriu",
-        "SectionTitle5": "Alăturăte echipei",
+        "SectionTitle5": "Alătură-te echipei",
         "elenaDesc": "Lider artistic/coregraf",
         "elenaCitate": "Dragostea pentru dansuri este răspândită de ea cu precauție.",
         "mihaiDesc": "Muzicant artistic",
