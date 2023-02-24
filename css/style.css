@@ -861,6 +861,11 @@ footer {
   width: 100%;
 }
 
+iframe {
+  width: 100%;
+  height: 600px;
+}
+
 .accordion-button {
   background-color: #EFEFEF !important;
 }
@@ -1033,5 +1038,9 @@ footer {
   }
   .gall:hover {
     transform: none !important;
+  }
+  iframe {
+    width: 100%;
+    height: 300px;
   }
 }/*# sourceMappingURL=style.css.map */
