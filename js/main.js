@@ -9,25 +9,6 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// ---------------------------ImageMap scroll animation-----------------------------------
-// const observer1 = new IntersectionObserver(entries => {
-//     entries.forEach(entry => {
-//         const sect2 = entry.target.querySelector('.app');
-
-//         if (entry.isIntersecting) {
-//             sect2.classList.add('app');
-//             return; // if we added the class, exit the function
-//         }
-
-//         // We're not intersecting, so remove the class!
-//         sect2.classList.remove('app');
-//     });
-// });
-
-// observer1.observe(document.querySelector('.section2'));
-
-// ---------------------------------------------------------------------------------------
-
 // =============================== Text apprearance animation ============================
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -63,7 +44,7 @@ var language = {
         "fcontact": "Contactează-ne",
         "oword": "Noi spunem",
         "disclaim": "Acest website a fost realizat în cadrul competiției ”Tekwill Junior Ambassadors” organizată de proiectul ”Tekwill în Fiecare Școală” și nu reflectă neapărat opinia proiectului.",
-        "formTitle": "Completează formularul și devin-o dansator alături de noi",
+        "formTitle": "Completează formularul și devin-o dansator alături de noi:",
         "formDesc": "Avem nevoie de tine pentru a ne ajuta să menținem tradițiile.",
 
 

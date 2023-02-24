@@ -6,7 +6,6 @@
     position: fixed;
     display: flex;
     justify-items: space-around;
-    // width: 80%;
     z-index: 100;
 }
 
@@ -96,7 +95,6 @@
 .navbar-scrolled {
     background-color: #212529;
     transition: all .5s;
-    // max-width: 80%;
     border-radius: 0 0 30px 30px;
     height: 66px;
 }
@@ -106,7 +104,6 @@
 .nav-link {
     color: gold !important;
     font-family: 'Libre Baskerville', serif;
-    // text-transform: uppercase;
     font-weight: bold;
 }
 
@@ -147,7 +144,7 @@
 footer {
     background-color: rgba(0, 0, 0, 0.582);
     padding: 0px;
-    // border-radius: 30px 30px 0 0;
+    font-family: 'Eczar', serif;
 
 }
 
@@ -175,7 +172,6 @@ footer {
 
 .socialmedia {
     display: flex;
-    //    flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     margin-left: 15px;
@@ -199,11 +195,6 @@ footer {
     font-size: 40px;
     font-family: 'Libre Baskerville', serif;
     font-weight: bold;
-    // color: #fec400;
-    // background-color: #212529;
-    // width: fit-content;
-    // border-radius: 15px;
-    // padding: 1%;
     margin: 3.5% 0 5% 0;
     padding-bottom: 30px;
     border-bottom: 1px solid rgb(33, 37, 41, 0.5);
@@ -244,14 +235,6 @@ footer {
 .section5 {
     padding: 4% 9%;
 }
-
-// .section5 {
-//     background-image: url("../resources/pics/formHead.jpg");
-//     background-size: cover;
-//     background-attachment: fixed;
-//     width: 100%;
-//     background-color: none;
-// }
 
 .cards {
     display: flex;
@@ -349,7 +332,6 @@ footer {
 .rep2even {
     width: 650px;
     border-radius: 15px;
-    // margin: 0 0 0 15%;
 
 }
 
@@ -395,12 +377,6 @@ footer {
 
 #app {
     display: flex;
-    // align-items: center;
-    // padding-bottom: 4vmin;
-    // height: 90vh;
-    // width: 100%;
-    // background: #ede8e2;
-    // color: #3a3535;
 }
 
 .title {
@@ -414,9 +390,6 @@ footer {
 
 
 .image {
-
-    // margin-left: -2rem;
-    // opacity: 0.7;
 
     img {
         border-radius: 15px;
@@ -525,14 +498,6 @@ footer {
 
 // ---------------------------Join the Ansemble------------------------------
 
-
-// .formHead {
-//     width: 500px;
-//     margin:0 0 4% 0;
-//     border-radius: 15px;
-//     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-// }
-
 .Form {
     display: flex;
     flex-flow: column;
@@ -623,8 +588,6 @@ footer {
 
 .PMForm .container {
     display: flex;
-    /* width: 50%; */
-    // margin: 4% 0;
     flex-direction: column;
     padding: 0;
 
@@ -989,6 +952,7 @@ footer {
     color: black !important;
 
 }
+
 // ===============================================================================================
 
 @media screen and (max-width: 991px) {
@@ -1086,8 +1050,8 @@ footer {
 
     .card:hover {
         transform: none !important;
-    
-    
+
+
     }
 
     #SectionTitle1,
@@ -1099,11 +1063,6 @@ footer {
         font-size: 35px;
         font-style: bold;
         margin: 0 0 5% 0;
-        // color: #fec400;
-        // background-color: #212529;
-        // width: fit-content;
-        // border-radius: 15px;
-        // padding: 1%;
 
     }
 
@@ -1173,7 +1132,6 @@ footer {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                // margin-bottom: 15px;
             }
         }
     }
@@ -1198,9 +1156,7 @@ footer {
     .navbar-scrolled {
         background-color: #212529;
         transition: all .5s;
-        // max-width: 80%;
         border-radius: 0 0 20px 20px;
-        // height: 70px;
     }
 
     #scrollspyHeading3 {
@@ -1214,20 +1170,12 @@ footer {
     }
 
     #app {
-        // display: grid;
-        // grid-template-columns: 1fr 2fr;
-        // align-items: center;
-        // padding-bottom: 4vmin;
-        // color: #3a3535;
-
         display: flex;
     }
 
     .title {
         grid-column: 1 / -1;
         grid-row: 1;
-
-        // font-family: "Prata", serif;
         font-size: 8vw;
         width: 35%;
         z-index: 2;
@@ -1241,7 +1189,7 @@ footer {
 
     .galleryMain {
         padding: 75px 15px;
-               
+
     }
 
     .gall:hover {
