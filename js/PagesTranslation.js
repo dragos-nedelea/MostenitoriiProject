@@ -1,6 +1,6 @@
 // =============================== scroll animation ======================================
 const navEl = document.querySelector('.navbar');
-        navEl.classList.add('navbar-scrolled');
+navEl.classList.add('navbar-scrolled');
 
 // =============================== Text apprearance animation ============================
 const observer = new IntersectionObserver((entries) => {
@@ -42,8 +42,28 @@ var language = {
         "morevids": "Videouri",
         "galId": "Galerie",
 
+    },
 
+    ru: {
+        // navbar
+        "home": "Домой",
+        "about": "Про нас",
+        "tour": "Мировое турне",
+        "staff": "Участники ансамбля",
+        "repert": "Репертуар",
+        "contact": "Присоединиться к команде",
 
+        //footer section 
+        "footercitate": "Мы, выходцы из народа, выросшие на этих песнях, обязаны хранить их с той святостью, с какой сохраняется наследие целого народа, мы должны беречь это сокровище, ибо оно народное и это наше. это всего румынского дыхания",
+        "usefullinks": "Полезные ссылки",
+        "products": "Продукты",
+        "fcontact": "Связаться с нами",
+        "oword": "Мы говорим",
+        "disclaim": "Этот веб-сайт был создан в рамках конкурса «Tekwill Junior Ambassadors», организованного проектом «Tekwill в каждой школе», и не обязательно отражает мнение проекта.",
+        "formTitle": "Заполните форму и станьте танцором вместе с нами",
+        "formDesc": "Нам нужно, чтобы вы помогли нам сохранить традиции.",
+        "morevids": "Видео",
+        "galId": "Галерея",
     }
 }
 
@@ -71,11 +91,27 @@ if (window.location.hash) {
         morevids.textContent = language.ro.morevids;
         galId.textContent = language.ro.galId;
 
+    } else if (window.location.hash === "#ru") {
 
+        langshow.textContent = "РУ";
 
-
-
-
+         // navbar
+         home.textContent = language.ru.home;
+         about.textContent = language.ru.about;
+         tour.textContent = language.ru.tour;
+         staff.textContent = language.ru.staff;
+         repert.textContent = language.ru.repert;
+         contact.textContent = language.ru.contact;
+ 
+         // footer section
+         footercitate.textContent = language.ru.footercitate;
+         usefullinks.textContent = language.ru.usefullinks;
+         products.textContent = language.ru.products;
+         fcontact.textContent = language.ru.fcontact;
+         oword.textContent = language.ru.oword;
+         disclaim.textContent = language.ru.disclaim;
+         morevids.textContent = language.ru.morevids;
+         galId.textContent = language.ru.galId;
 
     }
 }
@@ -86,6 +122,7 @@ for (i = 0; i <= dataReload.length; i++) {
 
     const rolang = document.getElementById("ro");
     const englang = document.getElementById("eng");
+    const rulang = document.getElementById("ru");
 
     rolang.onclick = function () {
         window.location.hash = "#ro";
@@ -94,6 +131,11 @@ for (i = 0; i <= dataReload.length; i++) {
     }
     englang.onclick = function () {
         window.location.hash = "#eng";
+        location.reload(true);
+
+    }
+    rulang.onclick = function () {
+        window.location.hash = "#ru";
         location.reload(true);
 
     }
