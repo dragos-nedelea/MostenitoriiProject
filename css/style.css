@@ -83,7 +83,7 @@
 .nav-link {
   color: gold !important;
   font-family: "Libre Baskerville", serif;
-  font-weight: bold;
+  font-size: 18px !important;
 }
 
 .nav-link.active {
@@ -886,6 +886,9 @@ footer {
   }
   .nav-pills .nav-item {
     padding: 5px 0;
+  }
+  .nav-link {
+    font-size: 16px !important;
   }
   .carousel {
     margin-top: 48px;

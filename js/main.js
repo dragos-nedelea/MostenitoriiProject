@@ -35,7 +35,7 @@ var language = {
         "tour": "Turul Lumii",
         "staff": "Membrii Ansamblului",
         "repert": "Repertoriu",
-        "contact": "Alătură-te echipei",
+        "contact": "Contactează-ne",
 
         //Staff section 
         "SectionTitle1": "Despre noi",
@@ -111,7 +111,7 @@ var language = {
         "tour": "Мировое турне",
         "staff": "Участники ансамбля",
         "repert": "Репертуар",
-        "contact": "Присоединиться к команде",
+        "contact": "Связаться",
 
         //Staff section 
         "SectionTitle1": "Про нас",
@@ -130,7 +130,7 @@ var language = {
 
         //footer section 
         "footercitate": "Мы, выходцы из народа, выросшие на этих песнях, обязаны хранить их с той святостью, с какой сохраняется наследие целого народа, мы должны беречь это сокровище, ибо оно народное и это наше. это всего румынского дыхания",
-        "usefullinks": "Полезные ссылки",
+        "usefullinks": "Ссылки",
         "products": "Продукты",
         "fcontact": "Связаться с нами",
         "oword": "Мы говорим",
