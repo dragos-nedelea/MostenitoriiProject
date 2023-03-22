@@ -14,8 +14,6 @@ const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('show');
-        } else {
-            entry.target.classList.remove('show');
         }
     });
 });
@@ -82,6 +80,8 @@ var language = {
         "Pnumb": "Nr.telefon",
         "YrMess": "Mesaj...",
         "chbText": "Accept termenii și condițiile",
+        "btnText": "Trimite",
+
 
 
 
@@ -158,6 +158,7 @@ var language = {
         "Pnumb": "Телефон",
         "YrMess": "Сообщение...",
         "chbText": "Я принимаю правила и условия",
+        "btnText": "Отправить",
 
 
 
@@ -233,6 +234,7 @@ if (window.location.hash) {
         chbText.textContent = language.ro.chbText;
         formTitle.textContent = language.ro.formTitle;
         formDesc.textContent = language.ro.formDesc;
+        btnText.textContent = language.ro.btnText;
         // Repertory section
         coserHang.textContent = language.ro.coserHang;
         ciuleandra.textContent = language.ro.ciuleandra;
@@ -288,7 +290,7 @@ if (window.location.hash) {
         descr5.textContent = language.ru.descr5;
         descr6.textContent = language.ru.descr6;
         // join section
-        surname.placeholder = language.ro.surname;
+        surname.placeholder = language.ru.surname;
         Name.placeholder = language.ru.Name;
         email.placeholder = language.ru.email;
         Pnumb.placeholder = language.ru.Pnumb;
@@ -296,6 +298,7 @@ if (window.location.hash) {
         chbText.textContent = language.ru.chbText;
         formTitle.textContent = language.ru.formTitle;
         formDesc.textContent = language.ru.formDesc;
+        btnText.textContent = language.ru.btnText;
         // Repertory section
         coserHang.textContent = language.ru.coserHang;
         ciuleandra.textContent = language.ru.ciuleandra;
