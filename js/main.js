@@ -61,6 +61,7 @@ var language = {
         "formDesc": "Avem nevoie de tine pentru a ne ajuta să menținem tradițiile.",
         "morevids": "Videouri",
         "galId": "Galerie",
+        "serv": "Servicii",
 
 
 
@@ -139,6 +140,7 @@ var language = {
         "formDesc": "Нам нужно, чтобы вы помогли нам сохранить традиции.",
         "morevids": "Видео",
         "galId": "Галерея",
+        "serv": "Сервисы",
 
 
 
@@ -218,6 +220,7 @@ if (window.location.hash) {
         disclaim.textContent = language.ro.disclaim;
         morevids.textContent = language.ro.morevids;
         galId.textContent = language.ro.galId;
+        serv.textContent = language.ro.serv;
         // carousel section
         descr1.textContent = language.ro.descr1;
         descr2.textContent = language.ro.descr2;
@@ -282,6 +285,7 @@ if (window.location.hash) {
         disclaim.textContent = language.ru.disclaim;
         morevids.textContent = language.ru.morevids;
         galId.textContent = language.ru.galId;
+        serv.textContent = language.ru.serv;
         // carousel section
         descr1.textContent = language.ru.descr1;
         descr2.textContent = language.ru.descr2;
@@ -324,6 +328,7 @@ for (i = 0; i <= dataReload.length; i++) {
     const rolang = document.getElementById("ro");
     const englang = document.getElementById("eng");
     const rulang = document.getElementById("ru");
+    
 
     rolang.onclick = function () {
         window.location.hash = "#ro";
@@ -341,5 +346,6 @@ for (i = 0; i <= dataReload.length; i++) {
 
     }
 }
+
 
 // ======================================================================================

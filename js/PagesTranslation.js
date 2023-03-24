@@ -7,8 +7,6 @@ const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('show');
-        } else {
-            entry.target.classList.remove('show');
         }
     });
 });
@@ -41,6 +39,7 @@ var language = {
         "formDesc": "Avem nevoie de tine pentru a ne ajuta să menținem tradițiile.",
         "morevids": "Videouri",
         "galId": "Galerie",
+        "serv": "Servicii",
 
     },
 
@@ -64,6 +63,7 @@ var language = {
         "formDesc": "Нам нужно, чтобы вы помогли нам сохранить традиции.",
         "morevids": "Видео",
         "galId": "Галерея",
+        "serv": "Сервисы",
     }
 }
 
@@ -90,29 +90,30 @@ if (window.location.hash) {
         disclaim.textContent = language.ro.disclaim;
         morevids.textContent = language.ro.morevids;
         galId.textContent = language.ro.galId;
+        serv.textContent = language.ro.serv;
 
     } else if (window.location.hash === "#ru") {
 
         langshow.textContent = "РУ";
 
-         // navbar
-         home.textContent = language.ru.home;
-         about.textContent = language.ru.about;
-         tour.textContent = language.ru.tour;
-         staff.textContent = language.ru.staff;
-         repert.textContent = language.ru.repert;
-         contact.textContent = language.ru.contact;
- 
-         // footer section
-         footercitate.textContent = language.ru.footercitate;
-         usefullinks.textContent = language.ru.usefullinks;
-         products.textContent = language.ru.products;
-         fcontact.textContent = language.ru.fcontact;
-         oword.textContent = language.ru.oword;
-         disclaim.textContent = language.ru.disclaim;
-         morevids.textContent = language.ru.morevids;
-         galId.textContent = language.ru.galId;
+        // navbar
+        home.textContent = language.ru.home;
+        about.textContent = language.ru.about;
+        tour.textContent = language.ru.tour;
+        staff.textContent = language.ru.staff;
+        repert.textContent = language.ru.repert;
+        contact.textContent = language.ru.contact;
 
+        // footer section
+        footercitate.textContent = language.ru.footercitate;
+        usefullinks.textContent = language.ru.usefullinks;
+        products.textContent = language.ru.products;
+        fcontact.textContent = language.ru.fcontact;
+        oword.textContent = language.ru.oword;
+        disclaim.textContent = language.ru.disclaim;
+        morevids.textContent = language.ru.morevids;
+        galId.textContent = language.ru.galId;
+        serv.textContent = language.ru.serv;
     }
 }
 
