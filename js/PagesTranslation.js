@@ -1,13 +1,7 @@
 // =============================== scroll animation ======================================
 const navEl = document.querySelector('.navbar');
+navEl.classList.add('navbar-scrolled');
 
-window.addEventListener('scroll', () => {
-    if (window.scrollY >= 56) {
-        navEl.classList.add('navbar-scrolled');
-    } else if (window.scrollY < 56) {
-        navEl.classList.remove('navbar-scrolled');
-    }
-});
 // =============================== Text apprearance animation ============================
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
