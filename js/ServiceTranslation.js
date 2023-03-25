@@ -52,6 +52,9 @@ var language = {
         "Bform": "Trimite",
         "title3": "Dacă ai nevoie ca cineva să-ți înveselească ceremonia",
         "subtitle3": "Contactează-ne, te putem ajuta cu asta!",
+        "SectionTitle3": "Dansatori la evenimente",
+        "titleBtn": "Contactează",
+
 
     },
 
@@ -84,10 +87,14 @@ var language = {
         "Dform": "Выберите, сколько танцоров:",
         "Rform": "Выберите свой регион:",
         "Dateform": "Установить дату:",
-        "Tform": "Наймите танцоров на вашу церемонию",
+        "Tform": "Закажите танцоров на вашу церемонию",
         "Bform": "Отправить",
         "title3": "Если вам нужно поднять настроение на церемонии",
         "subtitle3": "Свяжитесь с нами, мы можем вам в этом помочь!",
+        "SectionTitle3": "Танцоры на церемониях",
+        "titleBtn": "Связаться",
+
+
     }
 }
 
@@ -127,6 +134,8 @@ if (window.location.hash) {
         Bform.textContent = language.ro.Bform;
         title3.textContent = language.ro.title3;
         subtitle3.textContent = language.ro.subtitle3;
+        SectionTitle3.textContent = language.ro.SectionTitle3;
+        titleBtn.textContent = language.ro.titleBtn;
 
     } else if (window.location.hash === "#ru") {
 
@@ -162,6 +171,8 @@ if (window.location.hash) {
         Bform.textContent = language.ru.Bform;
         title3.textContent = language.ru.title3;
         subtitle3.textContent = language.ru.subtitle3;
+        SectionTitle3.textContent = language.ru.SectionTitle3;
+        titleBtn.textContent = language.ru.titleBtn;
 
     }
 }
