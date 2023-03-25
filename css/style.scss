@@ -958,18 +958,15 @@ footer {
 }
 
 // -----------------------------Service section---------------------------------------------------
-
-    .banner {
-    // position: sticky;
-    // padding-bottom: 56.2%;
-    width: 100%;
-    overflow: hidden;
-  }
   
   .videoembed {
     /*z-index: -99; */
     width: 100%; 
     height: 100%;
+  }
+
+  .videocontainer {
+    background-color: #EFEFEF;
   }
 
   .cta {
