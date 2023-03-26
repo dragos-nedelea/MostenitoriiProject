@@ -8,6 +8,15 @@ window.addEventListener('scroll', () => {
         navEl.classList.remove('navbar-scrolled');
     }
 });
+
+// =============================== Preloader animation ======================================
+
+const preloaderWrapper = document.querySelector('.preloader-wrapper');
+
+window.addEventListener('load', function() {
+    preloaderWrapper.classList.add('fade-out-animation');
+})
+
 // =============================== Text apprearance animation ============================
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {

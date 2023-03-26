@@ -2,6 +2,14 @@
 const navEl = document.querySelector('.navbar');
 navEl.classList.add('navbar-scrolled');
 
+// =============================== Preloader animation ======================================
+
+const preloaderWrapper = document.querySelector('.preloader-wrapper');
+
+window.addEventListener('load', function() {
+    preloaderWrapper.classList.add('fade-out-animation');
+})
+
 // =============================== Text apprearance animation ============================
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
