@@ -1,3 +1,17 @@
+// =============================== Page refresh on resize ======================================
+
+// define the breakpoint where the screen width changes
+const breakpoint = 768;
+
+// add an event listener for the resize event
+window.addEventListener('resize', function() {
+  // check if the screen width is below the breakpoint
+  if (window.innerWidth <= breakpoint || window.innerWidth >= breakpoint) {
+    // reload the page to update the mobile view
+    location.reload();
+  }
+});
+
 // =============================== scroll animation ======================================
 const navEl = document.querySelector('.navbar');
 navEl.classList.add('navbar-scrolled');

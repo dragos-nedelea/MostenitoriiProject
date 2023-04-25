@@ -1,3 +1,17 @@
+// =============================== Page refresh on resize ======================================
+
+// define the breakpoint where the screen width changes
+const breakpoint = 768;
+
+// add an event listener for the resize event
+window.addEventListener('resize', function() {
+  // check if the screen width is below the breakpoint
+  if (window.innerWidth <= breakpoint || window.innerWidth >= breakpoint) {
+    // reload the page to update the mobile view
+    location.reload();
+  }
+});
+
 // =============================== scroll animation ======================================
 const navEl = document.querySelector('.navbar');
 
@@ -13,7 +27,7 @@ window.addEventListener('scroll', () => {
 
 const preloaderWrapper = document.querySelector('.preloader-wrapper');
 
-window.addEventListener('load', function() {
+window.addEventListener('load', function () {
     preloaderWrapper.classList.add('fade-out-animation');
 })
 
@@ -105,7 +119,25 @@ var language = {
         "arcan": "Dansul Arcanul se executa in horă deschisă, pasul spre inainte făcându-se cu piciorul stâng ,mișcat prin spate ,tainic ,cu aceeași pași continua jocul cuprinzând in coregrafia sa mersul șarpelui si simbolul acestuia. Forma sa exprimă sacrificiul, şi o putem interpreta în mai multe feluri. Cele trei linii convergente pot reprezenta o suliţă, o rădăcină sau un om. Suliţa este arma zeului, şi în ipostaza sa de patron al războiului şi victoriei, promitea celor care purtau acest semn izbândă şi protecţie.",
 
         // About us section
-        "aboutUs": "Dansurile populare, împreună cu cantecele, legendele, poezia populară, tradițiile sunt ale noastre comoara națională - comoara de perle populare moștenite de la strămoșii noștri. Se consideră, și suntem de acord cu această părere, că dansul este limbajul ascuns al sufletului nostru, sau, în altele cuvintele, vizualizarea ardorii noastre și cele mai sublime impulsuri spirituale. ...Ce înseamnă să dansezi? S-ar părea că este o întrebare simplă, dar fiecare are răspunsul lui. De ce? Poate de asemenea pentru că, pentru noi, coregrafii, a dansa este sinonim cu a respira. De fapt, majoritatea oamenii au necesitatea să se manifeste în și prin dans și intuiția spune ei că ar putea avea succes încă din copilărie. Mă refer la satisfacția spirituală... Dansul este pasiunea și dragostea mea, dar intră și în îndatoririle mele profesionale - să-mi învețe micul și elevi stângaci (aduși la Moștenitorii la început cu mâna de către părinți, frați, surori sau bunici) să se miște în concordanță cu ritmul, să învețe pașii borei sau oricare altul dans. Este o bucurie enormă să-i vezi mai târziu dansând profesionist și să te scalzi în aplauze cu care sunt răsplătiți doar artiștii. Mă bucur foarte mult că munca mea nu este în zadar, aș spune mai degrabă că aduce mari satisfacții, deoarece nu există o apreciere mai mare decât cea care se reflectă în ochii părinților si al lor copii. Dansul, dacă se spune în termeni corespunzători, este pofta sufletului și este bucuria trupului. Cel care dansează bora satisface o nevoie spirituală - altfel de ce ar dansa oamenii? Noi, moldovenii, folosim orice ocazie pentru a ne manifesta în dans: ore, nunți, botez și orice petrecere. Prin intermediul dansului ne exprimăm sentimentele - bucuria sau tristețea, dragostea, sete de viață, entuziasm... Poate așa se explică existența atâtor ansambluri coregrafice, multitudinea de folk dansuri moștenite de la strămoși pe care suntem obligați să le păstrăm pentru prezent și viitor generatii. Cred că am dreptate spunând că doar păstrând și valorificând folclorul nostru am face să ne păstrăm ca națiune distinctă. Membrii ansamblului sunt profund îndrăgostiți de dansul nostru popular, autentic național costum, cântecele și muzica națiunii noastre. Ansamblul de dansuri populare Mostenitorii, a fost infiintat in 1994 si avea o echipa restransa - doar 16 copii si adolescenti. În trei ani, în 1997, având deja 48 de membri, echipa a devenit câștigătoare a Festivalului Național pentru Copii Alunelul declarat - dar și dovedit! - Misiunea ansamblului este de a valorifica cultura tradițională, rochia națională, costumele, tradițiile și jocurile populare care sunt caracteristice pentru regiunea pe care o reprezentăm. Scionii arborelui puternic numit Mostenitorii au contribuit și contribuie pe deplin prin dăruire, talent și dragoste față de dans la păstrarea moștenirii națiunii. Într -o perioadă relativ scurtă de timp, echipa a avansat rapid, devenind unul dintre cele mai bune ansambluri ale unui astfel de profil (copii) din țară și, respectiv, bucurându -se de aprecierea publicului. Lista succeselor cuprinde: modelul de onoare al modelului artistic ansamblu artistic, laureat la mai multe concursuri și festivaluri naționale și internaționale. Pe parcursul a două decenii de activitate (inițial, Cerc of Folk Dances from the Center of Creația pentru copiii din orașul Riscani), 400 de copii au fost învățați în ansamblul Mostenitoriti. În prezent, ansamblul participă la 140 de copii de 6-19 ani, împărțiți, în conformitate cu vârsta, în trei grupuri coregrafice: pregătitoare, medii și mari. Echipa a prezentat sute de spectacole pe cele mai importante etape din țară și în străinătate și a apărut de mai multe ori la televiziunea locală și internațională. Repertoriul propriu al ansamblului constă din dansuri populare care reflectă cele mai cunoscute tradiții, obiceiuri și obiceiuri: The Wedding Dance Zestrea, Capra, Caiutii, Procesiunea cântăreților de Carol, faimoasa minge a dirijorilor, etc. Spectatorii din programele de concert și obțin aplicații meritate, deoarece dansul este o oportunitate bună pentru afirmația identității naționale. Frumusețea dansului este finalizată și mai bine valorificată de costumul național. Fiecare membru al ansamblului, fost sau actual, are propriul său costum, care, evident, este unul autentic. Ansamblul de dansuri populare din ce în ce mai mult din orașul Riscani prin tot ceea ce face, contribuie la conservarea și valorificarea bogăției culturale și a valorilor coregrafice tradiționale. Talentul, dăruirea și perseverența sunt elementele care definesc echipa noastră.",
+        "H1": "Care este valoarea dansurilor și tradițiilor populare moldovenești?",
+        "H2": "De ce este dansul pasiunea autorului?",
+        "H3": "Cum a apărut ansamblul Moștenitorii?",
+        "H4": "Cum contribuie ansamblul Mostenitorii la conservarea culturii moldovenesti?",
+
+        "P1": "Autorul subliniază importanța dansurilor, cântecelor, legendelor și tradițiilor populare ca comoară națională moștenită de la strămoși. Pentru autor, dansul este o formă de limbaj ascuns care vizualizează ardoarea sufletului și impulsurile spirituale. Moldovenii folosesc dansul pentru a-și exprima sentimentele și pentru a-și păstra identitatea culturală. Autorul consideră că păstrarea și valorificarea folclorului este esențială pentru păstrarea Moldovei ca națiune distinctă.",
+        "P2": "Autorul, care este coregraf, vede dansul ca pe o pasiune și dragoste care intră și în îndatoririle lor profesionale. Aceștia îi învață pe copii și adolescenți să se miște în ritm și să învețe pașii dansurilor tradiționale moldovenești. Autoarea găsește o bucurie enormă în a-și vedea elevii dansând profesionist și scălându-se în aplauzele pe care le primesc numai artiștii. Pentru autor, dansul satisface o nevoie spirituală și pofta sufletească, aducând bucurie trupului.",
+        "P3": "Ansamblul Mostenitorii a fost infiintat in anul 1994 cu o echipa restransa de doar 16 copii si adolescenti. În trei ani, echipa a crescut la 48 de membri și a devenit câștigătoarea festivalului național pentru copii, Alunelul. Misiunea ansamblului este de a valorifica cultura tradițională, portul național, costumele, tradițiile populare și jocurile caracteristice regiunii pe care o reprezintă. Ansamblul a devenit unul dintre cele mai bune ansambluri pentru copii din Moldova, cu numeroase succese și premii la concursuri și festivaluri naționale și internaționale.",
+        "P4": "Ansamblul Mostenitorii a predat peste 400 de copii in doua decenii si are in prezent 140 de copii cu varste intre 6-19 ani impartiti in trei grupe coregrafice. Echipa a prezentat sute de spectacole pe scene importante din Moldova și din străinătate, iar repertoriul lor include dansuri populare tradiționale moldovenești care reflectă tradiții, obiceiuri și obiceiuri celebre. Fiecare membru al ansamblului are un costum național autentic. Prin talentul, dăruirea și perseverența lor, ansamblul Mostenitorii contribuie la păstrarea și valorificarea bogăției culturale moldovenești și a valorilor coregrafice tradiționale.",
+
+        "h1": "Care este valoarea dansurilor și tradițiilor populare moldovenești?",
+        "h2": "De ce este dansul pasiunea autorului?",
+        "h3": "Cum a apărut ansamblul Moștenitorii?",
+        "h4": "Cum contribuie ansamblul Mostenitorii la conservarea culturii moldovenesti?",
+
+        "p1": "Autorul subliniază importanța dansurilor, cântecelor, legendelor și tradițiilor populare ca comoară națională moștenită de la strămoși. Pentru autor, dansul este o formă de limbaj ascuns care vizualizează ardoarea sufletului și impulsurile spirituale. Moldovenii folosesc dansul pentru a-și exprima sentimentele și pentru a-și păstra identitatea culturală. Autorul consideră că păstrarea și valorificarea folclorului este esențială pentru păstrarea Moldovei ca națiune distinctă.",
+        "p2": "Autorul, care este coregraf, vede dansul ca pe o pasiune și dragoste care intră și în îndatoririle lor profesionale. Aceștia îi învață pe copii și adolescenți să se miște în ritm și să învețe pașii dansurilor tradiționale moldovenești. Autoarea găsește o bucurie enormă în a-și vedea elevii dansând profesionist și scălându-se în aplauzele pe care le primesc numai artiștii. Pentru autor, dansul satisface o nevoie spirituală și pofta sufletească, aducând bucurie trupului.",
+        "p3": "Ansamblul Mostenitorii a fost infiintat in anul 1994 cu o echipa restransa de doar 16 copii si adolescenti. În trei ani, echipa a crescut la 48 de membri și a devenit câștigătoarea festivalului național pentru copii, Alunelul. Misiunea ansamblului este de a valorifica cultura tradițională, portul național, costumele, tradițiile populare și jocurile caracteristice regiunii pe care o reprezintă. Ansamblul a devenit unul dintre cele mai bune ansambluri pentru copii din Moldova, cu numeroase succese și premii la concursuri și festivaluri naționale și internaționale.",
+        "p4": "Ansamblul Mostenitorii a predat peste 400 de copii in doua decenii si are in prezent 140 de copii cu varste intre 6-19 ani impartiti in trei grupe coregrafice. Echipa a prezentat sute de spectacole pe scene importante din Moldova și din străinătate, iar repertoriul lor include dansuri populare tradiționale moldovenești care reflectă tradiții, obiceiuri și obiceiuri celebre. Fiecare membru al ansamblului are un costum național autentic. Prin talentul, dăruirea și perseverența lor, ansamblul Mostenitorii contribuie la păstrarea și valorificarea bogăției culturale moldovenești și a valorilor coregrafice tradiționale.",
 
         //Our Wolrd Tour section
         "Map1": "Festivaluri",
@@ -183,7 +215,25 @@ var language = {
         "arcan": "Танец Аркана исполнялся в открытом танце, шаг вперед делался левой ногой, отставал назад, тайком, теми же шагами игра продолжалась, включая в ее хореографию походку змеи и ее символ. Его форма выражает жертвенность, и мы можем интерпретировать ее по-разному. Три сходящиеся линии могут обозначать копье, корень или человека. Копье — оружие бога, и в своей роли покровителя войны и победы оно сулило победу и защиту тем, кто носил этот знак.",
 
         // About us section
-        "aboutUs": "Народные танцы, наряду с песнями, легендами, народной поэзией, традициями, являются нашим национальным достоянием - сокровищницей народных жемчужин, унаследованных от наших предков. Считается, и мы согласны с этим мнением, что танец – это скрытый язык нашей души, или, другими словами, визуализация нашего пыла и самых возвышенных душевных порывов. ...Что значит танцевать? Казалось бы, простой вопрос, но у каждого свой ответ. Почему? Может быть, еще и потому, что для нас, хореографов, танец является синонимом дыхания. На самом деле, у большинства людей есть потребность выражать себя в танце и через него, и интуиция подсказывает им, что они могут добиться успеха с детства. Я имею в виду духовное удовлетворение... Танцы - моя страсть и любовь, но они входят и в мои профессиональные обязанности - учить моих маленьких и неуклюжих учеников (приведенных к Наследникам сначала на руках родителями, братьями, сестрами или бабушками и дедушками) двигаться в соответствии с ритмом, чтобы разучить шаги бора или любой другой танец. Это огромная радость – видеть, как потом они профессионально танцуют, и купаться в аплодисментах, которыми награждаются только артисты. Я очень рада, что моя работа не напрасна, я бы даже сказал, что она приносит большое удовлетворение, ведь нет большей оценки, чем та, которая отражается в глазах родителей и их детей. Танец, если его правильно выразить, — это аппетит души и радость тела. Тот, кто танцует бору, исполняет духовную потребность - иначе зачем бы люди танцевали? Мы, молдаване, используем любой повод, чтобы выразить себя в танце: уроки, свадьбы, крестины и любую вечеринку. Через танец мы выражаем свои чувства - радость или грусть, любовь, жажду жизни, восторг... Может быть, этим и объясняется существование стольких хореографических ансамблей, множества унаследованных от предков народных танцев, которые мы обязаны сохранять до наших дней и будущие поколения. Думаю, я прав, говоря, что только сохраняя и ценя наш фольклор, мы сохраним себя как отдельный народ. Участники ансамбля глубоко влюблены в наш народный танец, аутентичный национальный костюм, песни и музыку нашего народа. Ансамбль народного танца «Мостенитории» был основан в 1994 году и имел небольшой коллектив – всего 16 детей и подростков. Через три года, в 1997 году, уже насчитывая 48 участников, коллектив стал победителем Всероссийского детского фестиваля «Алунелель» объявленным – но и проверенным! - Миссия ансамбля состоит в том, чтобы максимально использовать традиционную культуру, национальную одежду, костюмы, традиции и народные игры, характерные для региона, который мы представляем. Отпрыски могучего древа, именуемые Наследниками, вносили и вносят свой вклад своей самоотверженностью, талантом и любовью к танцам в дело сохранения национального наследия. За сравнительно короткий срок коллектив стремительно продвинулся вперед, став одним из лучших ансамблей такого профиля (детский) в стране и, соответственно, пользуясь признанием публики. В списке успехов: почетный образец художественного образца художественного ансамбля, лауреат ряда национальных и международных конкурсов и фестивалей. За два десятилетия деятельности (первоначально Церк народных танцев Центра творчества для детей из города Рышкановка) в ансамбле Мостениторити прошли обучение 400 детей. В настоящее время в ансамбле занимается 140 детей в возрасте от 6 до 19 лет, разделенных по возрасту на три хореографические группы: подготовительную, среднюю и большую. Коллектив представил сотни шоу на самых значимых сценах страны и зарубежья и несколько раз выступал на местном и международном телевидении. Собственный репертуар ансамбля составляют народные танцы, отражающие наиболее известные традиции, обычаи и обычаи: Свадебный танец Приданое, Коза, Каютия, Шествие певцов-колядок, знаменитый бал дирижеров и др. Зрители концертных программ и получают заслуженные заявки, ведь танец – это хорошая возможность для утверждения национального самосознания. Красота танца дополняется и лучше используется национальным костюмом. У каждого члена ансамбля, бывшего или настоящего, есть свой костюм, явно подлинный. Становящийся все более популярным танцевальный ансамбль города Рышкань всем, что он делает, способствует сохранению и приумножению культурного богатства и традиционных хореографических ценностей. Талант, целеустремленность и настойчивость — вот те элементы, которые отличают нашу команду.",
+        "H1": "В чем ценность молдавских народных танцев и традиций?",
+        "H2": "Почему танец является страстью автора?",
+        "H3": "Как появился ансамбль «Мостенитории»?",
+        "H4": "Как ансамбль Мостенитории способствует сохранению молдавской культуры?",
+
+        "P1": "Автор подчеркивает значение народных танцев, песен, легенд и традиций как национального достояния, унаследованного от предков. Для автора танец – это форма скрытого языка, визуализирующего душевный пыл и душевные порывы. Молдаване используют танец, чтобы выразить свои чувства и сохранить свою культурную самобытность. Автор считает, что сохранение и оценка фольклора необходимы для сохранения Молдовы как отдельной нации.",
+        "P2": "Автор, хореограф, рассматривает танец как страсть и любовь, что также входит в их профессиональные обязанности. Они учат детей и подростков двигаться в ритме и разучивают па традиционных молдавских танцев. Автор находит огромную радость в том, что его ученики профессионально танцуют и купаются в аплодисментах, которые достаются только артистам. Для автора танец удовлетворяет духовную потребность и похоть души, принося радость телу.",
+        "P3": "Ансамбль «Мостенитории» был основан в 1994 году небольшим коллективом из 16 детей и подростков. За три года коллектив вырос до 48 человек и стал победителем национального детского фестиваля «Алунелул». Миссия ансамбля - возвеличивать традиционную культуру, национальную одежду, костюмы, народные традиции и игры, характерные для региона, который они представляют. Ансамбль стал одним из лучших ансамблей для детей в Молдове, с многочисленными успехами и наградами на национальных и международных конкурсах и фестивалях.",
+        "P4": "Ансамбль «Мостенитории» за два десятилетия обучил более 400 детей и в настоящее время насчитывает 140 детей в возрасте от 6 до 19 лет, разделенных на три хореографические группы. Коллектив представил сотни спектаклей на важных сценах Молдовы и за рубежом, а их репертуар включает традиционные молдавские народные танцы, отражающие известные традиции, обычаи и привычки. У каждого участника ансамбля настоящий национальный костюм. Благодаря своему таланту, самоотверженности и настойчивости ансамбль «Мостенитории» вносит свой вклад в сохранение и приумножение молдавского культурного богатства и традиционных хореографических ценностей.",
+
+        "h1": "В чем ценность молдавских народных танцев и традиций?",
+        "h2": "Почему танец является страстью автора?",
+        "h3": "Как появился ансамбль «Мостенитории»?",
+        "h4": "Как ансамбль Мостенитории способствует сохранению молдавской культуры?",
+
+        "p1": "Автор подчеркивает значение народных танцев, песен, легенд и традиций как национального достояния, унаследованного от предков. Для автора танец – это форма скрытого языка, визуализирующего душевный пыл и душевные порывы. Молдаване используют танец, чтобы выразить свои чувства и сохранить свою культурную самобытность. Автор считает, что сохранение и оценка фольклора необходимы для сохранения Молдовы как отдельной нации.",
+        "p2": "Автор, хореограф, рассматривает танец как страсть и любовь, что также входит в их профессиональные обязанности. Они учат детей и подростков двигаться в ритме и разучивают па традиционных молдавских танцев. Автор находит огромную радость в том, что его ученики профессионально танцуют и купаются в аплодисментах, которые достаются только артистам. Для автора танец удовлетворяет духовную потребность и похоть души, принося радость телу.",
+        "p3": "Ансамбль «Мостенитории» был основан в 1994 году небольшим коллективом из 16 детей и подростков. За три года коллектив вырос до 48 человек и стал победителем национального детского фестиваля «Алунелул». Миссия ансамбля - возвеличивать традиционную культуру, национальную одежду, костюмы, народные традиции и игры, характерные для региона, который они представляют. Ансамбль стал одним из лучших ансамблей для детей в Молдове, с многочисленными успехами и наградами на национальных и международных конкурсах и фестивалях.",
+        "p4": "Ансамбль «Мостенитории» за два десятилетия обучил более 400 детей и в настоящее время насчитывает 140 детей в возрасте от 6 до 19 лет, разделенных на три хореографические группы. Коллектив представил сотни спектаклей на важных сценах Молдовы и за рубежом, а их репертуар включает традиционные молдавские народные танцы, отражающие известные традиции, обычаи и привычки. У каждого участника ансамбля настоящий национальный костюм. Благодаря своему таланту, самоотверженности и настойчивости ансамбль «Мостенитории» вносит свой вклад в сохранение и приумножение молдавского культурного богатства и традиционных хореографических ценностей.",
 
         //Our Wolrd Tour section
         "Map1": "Глобальные",
@@ -256,7 +306,23 @@ if (window.location.hash) {
         horaSarb.textContent = language.ro.horaSarb;
         arcan.textContent = language.ro.arcan;
         //About us section
-        aboutUs.textContent = language.ro.aboutUs;
+        H1.textContent = language.ro.H1;
+        H2.textContent = language.ro.H2;
+        H3.textContent = language.ro.H3;
+        H4.textContent = language.ro.H4;
+        P1.textContent = language.ro.P1;
+        P2.textContent = language.ro.P2;
+        P3.textContent = language.ro.P3;
+        P4.textContent = language.ro.P4;
+
+        h1.textContent = language.ro.h1;
+        h2.textContent = language.ro.h2;
+        h3.textContent = language.ro.h3;
+        h4.textContent = language.ro.h4;
+        p1.textContent = language.ro.p1;
+        p2.textContent = language.ro.p2;
+        p3.textContent = language.ro.p3;
+        p4.textContent = language.ro.p4;
         //Our World Tour secion
         Map1.textContent = language.ro.Map1;
         Map2.textContent = language.ro.Map2;
@@ -321,7 +387,23 @@ if (window.location.hash) {
         horaSarb.textContent = language.ru.horaSarb;
         arcan.textContent = language.ru.arcan;
         //About us section
-        aboutUs.textContent = language.ru.aboutUs;
+        H1.textContent = language.ru.H1;
+        H2.textContent = language.ru.H2;
+        H3.textContent = language.ru.H3;
+        H4.textContent = language.ru.H4;
+        P1.textContent = language.ru.P1;
+        P2.textContent = language.ru.P2;
+        P3.textContent = language.ru.P3;
+        P4.textContent = language.ru.P4;
+                // 
+        h1.textContent = language.ru.h1;
+        h2.textContent = language.ru.h2;
+        h3.textContent = language.ru.h3;
+        h4.textContent = language.ru.h4;
+        p1.textContent = language.ru.p1;
+        p2.textContent = language.ru.p2;
+        p3.textContent = language.ru.p3;
+        p4.textContent = language.ru.p4; 
         //Our World Tour secion
         Map1.textContent = language.ru.Map1;
         Map2.textContent = language.ru.Map2;
@@ -336,7 +418,7 @@ for (i = 0; i <= dataReload.length; i++) {
     const rolang = document.getElementById("ro");
     const englang = document.getElementById("eng");
     const rulang = document.getElementById("ru");
-    
+
 
     rolang.onclick = function () {
         window.location.hash = "#ro";

@@ -92,6 +92,32 @@
   box-shadow: 0 0 0 0.2rem hsla(46, 100%, 50%, 0.25) !important;
 }
 
+#serv {
+  color: gold;
+  font-family: "Libre Baskerville", serif;
+  font-size: 18px !important;
+}
+
+#navBlock {
+  display: flex;
+  align-items: center;
+}
+#navBlock ul {
+  margin-left: 20px;
+}
+
+.quesText {
+  padding: 0 0 0 50px;
+}
+
+.aboutTextSection h4 {
+  font-style: italic;
+}
+
+#accordionExample2 {
+  display: none;
+}
+
 .navbar-scrolled {
   background-color: #212529;
   transition: all 0.5s;
@@ -252,6 +278,10 @@ footer {
   color: #fec400;
 }
 
+.navbar-collapse {
+  justify-content: space-around;
+}
+
 .nav-link {
   padding: 15px 5px;
   transition: 0.2s;
@@ -325,6 +355,7 @@ footer {
 
 #app {
   display: flex;
+  justify-content: space-between;
 }
 
 .title {
@@ -484,7 +515,6 @@ footer {
 #Name {
   border-radius: 15px;
   border: 1px solid rgba(128, 128, 128, 0.323);
-  min-height: 40px;
 }
 #Name::-moz-placeholder {
   font-family: "Libre Baskerville", serif;
@@ -502,7 +532,6 @@ footer {
 #email {
   border-radius: 15px;
   border: 1px solid rgba(128, 128, 128, 0.323);
-  min-height: 40px;
 }
 #email::-moz-placeholder {
   font-family: "Libre Baskerville", serif;
@@ -520,7 +549,6 @@ footer {
 #Pnumb {
   border-radius: 15px;
   border: 1px solid rgba(128, 128, 128, 0.323);
-  min-height: 40px;
 }
 #Pnumb::-moz-placeholder {
   font-family: "Libre Baskerville", serif;
@@ -1011,6 +1039,7 @@ footer {
 .modal-content {
   background: #212529 !important;
   border-radius: 32px !important;
+  padding: 10px;
 }
 
 .modal-title {
@@ -1048,6 +1077,12 @@ footer {
   position: fixed;
 }
 
+#calendar {
+  height: 600px;
+  width: 800px;
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 991px) {
   /* For mobile phones: */
   .navbar {
@@ -1069,6 +1104,7 @@ footer {
   }
   .nav-pills .nav-item {
     padding: 5px 0;
+    width: 375px;
   }
   .nav-link {
     font-size: 16px !important;
@@ -1078,6 +1114,37 @@ footer {
   }
   .carousel-item {
     height: auto;
+  }
+  #accordionExample2 {
+    display: block;
+  }
+  #accordionExample2 p {
+    padding: 0;
+    font-size: 15px;
+  }
+  #accordionExample2 h4 {
+    font-size: 18px;
+  }
+  .aboutTextSection {
+    display: none;
+  }
+  #app {
+    flex-direction: column;
+  }
+  #app #calendar {
+    height: 500px;
+    width: 350px;
+    margin: 0 auto;
+  }
+  #Map1, #Map2 {
+    font-size: 54px;
+    text-shadow: none !important;
+  }
+  .calendarText {
+    display: flex;
+  }
+  .calendarText #Map2 {
+    margin: 0 0 0 20px;
   }
   .rep1odd {
     width: 325px;
