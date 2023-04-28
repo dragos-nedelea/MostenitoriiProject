@@ -19,9 +19,9 @@
 
   <div class="preloader-wrapper">
     <div class="spinner-grow" style="width: 3rem; height: 3rem;" role="status">
-        <span class="visually-hidden">Loading...</span>
+      <span class="visually-hidden">Loading...</span>
     </div>
-</div>
+  </div>
 
   <section class="header ">
 
@@ -42,7 +42,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav nav-pills m-auto">
+          <ul class="navbar-nav nav-pills">
             <li class="nav-item">
               <a id="home" class="nav-link" data-bs-target=".navbar-collapse.show" href="../index.html">Home</a>
             </li>
@@ -67,7 +67,12 @@
 
           </ul>
 
-          <div class="switch">
+          <div id="navBlock" class="switch">
+            <!-- Dark/Light Mode -->
+            <div>
+              <a id="serv" class="galanchor nav-item" href="../pages/services.html" style="text-decoration: none;">
+                Services</a>
+            </div>
             <ul class="nav-item dropdown md-auto">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false"><span id="langshow">ENG</span>
@@ -82,12 +87,6 @@
                     data-bs-target=".navbar-collapse.show" data-reload> RU</a></li>
               </ul>
             </ul>
-            <!-- Dark/Light Mode -->
-            <!-- <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"
-                                checked>
-                            <img class="swIcon" src="./resources/icons/sun.png" alt="">
-                        </div> -->
           </div>
         </div>
       </div>
@@ -255,7 +254,7 @@
               <i class="bi bi-geo-fill"></i> Str. Gh.Râșcanu 3, or.Rîșcani
             </p>
             <p>
-              <a class="gmail" href="#scrollspyHeading6"><i class="bi bi-envelope-fill"></i>
+              <a class="gmail" href="mailto:recipient@example.com?subject=Subject%20Line&body=Email%20body%20text"><i class="bi bi-envelope-fill"></i>
                 mostenitorii_riscani@yahoo.com</a>
             </p>
             <a class="phone" href="tel:069020925">

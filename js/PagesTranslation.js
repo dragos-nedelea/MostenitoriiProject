@@ -49,6 +49,8 @@ var language = {
         "staff": "Membrii Ansamblului",
         "repert": "Repertoriu",
         "contact": "Alătură-te echipei",
+        "serv": "Servicii",
+
 
         //footer section 
         "footercitate": "Noi, cei ieșiți din popor, care am crescut legănati de aceste cântece, suntem datori a le păstra cu sfințenia cu care se păstrează moştenirea venită de la o națiune întreagă, trebuie să veghem lângă această comoară, căci ea fiind a poporului este şi a noastră. este a întregii suflări românești",
@@ -61,7 +63,6 @@ var language = {
         "formDesc": "Avem nevoie de tine pentru a ne ajuta să menținem tradițiile.",
         "morevids": "Videouri",
         "galId": "Galerie",
-        "serv": "Servicii",
 
     },
 
@@ -73,6 +74,8 @@ var language = {
         "staff": "Участники ансамбля",
         "repert": "Репертуар",
         "contact": "Связаться",
+        "serv": "Сервисы",
+
 
         //footer section 
         "footercitate": "Мы, выходцы из народа, выросшие на этих песнях, обязаны хранить их с той святостью, с какой сохраняется наследие целого народа, мы должны беречь это сокровище, ибо оно народное и это наше. это всего румынского дыхания",
@@ -85,7 +88,6 @@ var language = {
         "formDesc": "Нам нужно, чтобы вы помогли нам сохранить традиции.",
         "morevids": "Видео",
         "galId": "Галерея",
-        "serv": "Сервисы",
     }
 }
 

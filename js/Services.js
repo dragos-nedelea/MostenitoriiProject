@@ -170,11 +170,11 @@ var language = {
     ro: {
         // navbar
         "home": "Acasă",
-        "about": "Despre Noi",
-        "tour": "Turul Lumii",
-        "staff": "Membrii Ansamblului",
-        "repert": "Repertoriu",
-        "contact": "Alătură-te echipei",
+        "OurCalendar": "Calendarul Nostru",
+        "navDancers": "Dansatori la evenimente",
+        "traditions": "Dansuri ceremoniale",
+        "serv": "Servicii",
+
 
         //footer section 
         "footercitate": "Noi, cei ieșiți din popor, care am crescut legănati de aceste cântece, suntem datori a le păstra cu sfințenia cu care se păstrează moştenirea venită de la o națiune întreagă, trebuie să veghem lângă această comoară, căci ea fiind a poporului este şi a noastră. este a întregii suflări românești",
@@ -187,11 +187,10 @@ var language = {
         "formDesc": "Avem nevoie de tine pentru a ne ajuta să menținem tradițiile.",
         "morevids": "Videouri",
         "galId": "Galerie",
-        "serv": "Servicii",
 
         //Form Section
         "Nameform": "Nume:",
-        "formDisc": "După trimitere veți fi contactat.",
+        "formDisc": "După trimitere veți fi contactat, iar data aleasă de dvs. va fi afișată în calendarul nostru.",
         "Pform": "Nr.Telefon:",
         "Dform": "Alegeți numărul dansatorilor",
         "Rform": "Alegeți regiunea:",
@@ -203,17 +202,28 @@ var language = {
         "SectionTitle3": "Dansatori la evenimente",
         "titleBtn": "Contactează",
 
+        //Our Calendar Section
+        "SectionTitle2": "Calendarul nostru",
+        "Map1": "Dățile",
+        "Map2": "ocupate:",
+
+        //Traditions Section
+        "SectionTitle4": "Dansuri ceremoniale",
+        "podul": "Tradiția podului de flori la nunți este o practică populară în multe culturi și țări din întreaga lume. Aceasta presupune crearea unui pod decorativ, din flori sau alte materiale decorative, pe care mirii îl traversează în timp ce se îndreaptă spre altar sau în timpul petrecerii de nuntă. Podul de flori simbolizează trecerea de la viața de burlac sau de la viața unei fete la viața unui cuplu căsătorit. În timp ce trec prin podul florilor, mirii sunt încurajați să se concentreze asupra dragostei și angajamentului lor unul față de celălalt, deoarece simbolizează o tranziție importantă în viața lor. Această tradiție poate fi personalizată în funcție de gusturile și preferințele fiecărui cuplu cu diferite tipuri de flori, culori și stiluri de decorare. Podul de flori poate fi amplasat în diferite locații – în afara bisericii sau în interiorul sălii de nuntă – și poate fi realizat cu ajutorul familiei sau prietenilor, care pot contribui cu flori sau alte materiale decorative.",
+        "incuscr": "Traditia incuscririi este una dintre cele mai vechi si mai importante traditii ale nuntilor romanesti si presupune ca un barbat din familia mirelui merge la casa miresei pentru a o cere in casatorie. Această ceremonie are loc înainte de nuntă și este considerată un simbol al respectului, tradiției și unității familiei. În ceremonia de consfințire, bărbatul care o cere în căsătorie aduce cu el cadouri pentru familia ei, precum pâine și sare, simboluri ale prosperității și bunăstării. Înainte de a fi lăsat să intre în casă, bărbatul trebuie să treacă prin mai multe teste pregătitoare, care pot include dansul cu mireasa sau chiar negocierea unui preț pentru a lua mireasa. Daca barbatul reuseste sa duca la bun sfarsit toate aceste probe, atunci mireasa este data in casatorie si cei doi isi vor uni destinele intr-un mod festiv la nunta. În acest fel, tradiția celor consacrat este un moment deosebit de important pentru ambele familii și este considerată o modalitate de întărire a legăturilor dintre ele.",
+        "colacul": "Colacul miresei este o traditie la nuntile romanesti, care reprezinta un simbol al unitatii si al legaturii dintre miri. Cola este de obicei un inel din pâine, decorat cu flori, panglici și alte elemente decorative. În timpul ceremoniei nunții, mirii iau colacul în mâini și îl rup împreună, simbolizând astfel că vor fi uniți și vor împărtăși totul în viața lor împreună. După ce colacul este rupt, fiecare dintre cei doi va lua o bucată și o va pune în gura celuilalt, simbolizând astfel promisiunea de a se hrăni și de a se sprijini reciproc pentru tot restul vieții. In unele regiuni ale tarii, prajitura miresei este facuta dintr-un aluat dulce, decorat cu stafide sau alte fructe uscate, iar in alte regiuni se face dintr-un aluat mai simplu, fara adaos de zahar. Tradiția cocului miresei este o practică veche care datează din cele mai vechi timpuri și este încă respectată și practicată în multe zone ale României. Această tradiție este considerată un moment important al ceremoniei nunții și un simbol al iubirii și unității dintre mire și mireasă."
+
+
 
     },
 
     ru: {
         // navbar
         "home": "Домой",
-        "about": "Про нас",
-        "tour": "Мировое турне",
-        "staff": "Участники ансамбля",
-        "repert": "Репертуар",
-        "contact": "Связаться",
+        "OurCalendar": "Наш календар",
+        "navDancers": "Танцоры на церемониях",
+        "traditions": "Церемониальные танцы",
+        "serv": "Сервисы",
 
         //footer section 
         "footercitate": "Мы, выходцы из народа, выросшие на этих песнях, обязаны хранить их с той святостью, с какой сохраняется наследие целого народа, мы должны беречь это сокровище, ибо оно народное и это наше. это всего румынского дыхания",
@@ -226,11 +236,10 @@ var language = {
         "formDesc": "Нам нужно, чтобы вы помогли нам сохранить традиции.",
         "morevids": "Видео",
         "galId": "Галерея",
-        "serv": "Сервисы",
 
         //Form Section
         "Nameform": "Имя:",
-        "formDisc": "После отправки с вами свяжутся.",
+        "formDisc": "После отправки с вами свяжутся, и выбранная вами дата будет отображаться в нашем календаре.",
         "Pform": "Номер:",
         "Dform": "Выберите, сколько танцоров:",
         "Rform": "Выберите свой регион:",
@@ -241,6 +250,19 @@ var language = {
         "subtitle3": "Свяжитесь с нами, мы можем вам в этом помочь!",
         "SectionTitle3": "Танцоры на церемониях",
         "titleBtn": "Связаться",
+
+        //Our Calendar Section
+        "SectionTitle2": "Наш календарь",
+        "Map1": "Занятые",
+        "Map2": "даты:",
+
+        //Traditions Section
+        "SectionTitle4": "Церемониальные танцы",
+        "podul": "Традиция моста из цветов на свадьбах популярна во многих культурах и странах мира. Это включает в себя создание декоративного моста из цветов или других декоративных материалов, который жених и невеста пересекают, направляясь к алтарю или во время свадебной вечеринки. Мост из цветов символизирует переход от жизни холостяка или от жизни девушки к жизни супружеской пары. Когда они идут по мосту из цветов, жениху и невесте предлагается сосредоточиться на своей любви и приверженности друг другу, поскольку они символизируют важный переход в их жизни. Эта традиция может быть изменена в соответствии со вкусами и предпочтениями каждой пары с использованием различных видов цветов, цветов и стилей оформления. Цветочный мостик можно разместить в разных местах — за пределами церкви или внутри свадебного зала — и его можно создать с помощью семьи или друзей, которые могут предоставить цветы или другие декоративные материалы.",
+        "incuscr": "Традиция incuscrire - одна из старейших и наиболее важных традиций румынских свадеб, когда мужчина из семьи жениха идет в дом невесты, чтобы сделать ей предложение. Эта церемония проходит перед свадьбой и считается символом уважения, традиции и единства семьи. На церемонии освящения мужчина, делающий предложение невесте, приносит с собой подарки для ее семьи, такие как хлеб и соль, символы процветания и благополучия. Прежде чем его впустят в дом, мужчина должен пройти несколько подготовительных испытаний, которые могут включать в себя танцы с невестой или даже переговоры о цене, чтобы взять невесту. Если мужчине удается успешно пройти все эти испытания, то невеста выдается замуж, и на свадьбе они празднично соединят свои судьбы. Таким образом, традиция хранимого является особенно важным моментом для обеих семей и считается способом укрепить связи между ними.",
+        "colacul": "Colacul Mireser - это традиция румынских свадеб, которая представляет собой символ единства и связи между женихом и невестой. Кола обычно представляет собой кольцо из хлеба, украшенное цветами, лентами и другими декоративными элементами. Во время свадебной церемонии жених и невеста берут в руки моток и вместе разрывают его, символизируя тем самым, что они будут едины и будут делить все в своей жизни вместе. После того, как катушка будет сломана, каждый из двоих возьмет кусок и положит его в рот другому, что символизирует обещание кормить и поддерживать друг друга до конца своей жизни. В одних регионах страны торт невесты делают из сладкого теста, украшая изюмом или другими сухофруктами, а в других - из более простого теста, без добавления сахара. Традиция булочки невесты - это старинная практика, которая восходит к древним временам и до сих пор соблюдается и практикуется во многих районах Румынии. Эта традиция считается важным моментом свадебной церемонии и символом любви и единства между женихом и невестой."
+       
+
 
 
     }
@@ -254,11 +276,10 @@ if (window.location.hash) {
 
         // navbar
         home.textContent = language.ro.home;
-        about.textContent = language.ro.about;
-        tour.textContent = language.ro.tour;
-        staff.textContent = language.ro.staff;
-        repert.textContent = language.ro.repert;
-        contact.textContent = language.ro.contact;
+        OurCalendar.textContent = language.ro.OurCalendar;
+        navDancers.textContent = language.ro.navDancers;
+        traditions.textContent = language.ro.traditions;
+        serv.textContent = language.ro.serv;
 
         // footer section
         footercitate.textContent = language.ro.footercitate;
@@ -269,7 +290,6 @@ if (window.location.hash) {
         disclaim.textContent = language.ro.disclaim;
         morevids.textContent = language.ro.morevids;
         galId.textContent = language.ro.galId;
-        serv.textContent = language.ro.serv;
 
         // Form Section
         Nameform.textContent = language.ro.Nameform;
@@ -285,17 +305,27 @@ if (window.location.hash) {
         SectionTitle3.textContent = language.ro.SectionTitle3;
         titleBtn.textContent = language.ro.titleBtn;
 
+        //Our Calendar Section
+        SectionTitle2.textContent = language.ro.SectionTitle2;
+        Map1.textContent = language.ro.Map1;
+        Map2.textContent = language.ro.Map2;
+
+        //Dances Section
+        SectionTitle4.textContent = language.ro.SectionTitle4;
+        podul.textContent = language.ro.podul;
+        incuscr.textContent= language.ro.incuscr;
+        colacul.textContent = language.ro.colacul;
+
     } else if (window.location.hash === "#ru") {
 
         langshow.textContent = "РУ";
 
         // navbar
         home.textContent = language.ru.home;
-        about.textContent = language.ru.about;
-        tour.textContent = language.ru.tour;
-        staff.textContent = language.ru.staff;
-        repert.textContent = language.ru.repert;
-        contact.textContent = language.ru.contact;
+        OurCalendar.textContent = language.ru.OurCalendar;
+        navDancers.textContent = language.ru.navDancers;
+        traditions.textContent = language.ru.traditions;
+        serv.textContent = language.ru.serv;
 
         // footer section
         footercitate.textContent = language.ru.footercitate;
@@ -306,7 +336,6 @@ if (window.location.hash) {
         disclaim.textContent = language.ru.disclaim;
         morevids.textContent = language.ru.morevids;
         galId.textContent = language.ru.galId;
-        serv.textContent = language.ru.serv;
 
         // Form Section
         Nameform.textContent = language.ru.Nameform;
@@ -322,33 +351,46 @@ if (window.location.hash) {
         SectionTitle3.textContent = language.ru.SectionTitle3;
         titleBtn.textContent = language.ru.titleBtn;
 
+        //Our Calendar Section
+        SectionTitle2.textContent = language.ru.SectionTitle2;
+        Map1.textContent = language.ru.Map1;
+        Map2.textContent = language.ru.Map2;
+
+        //Dances Section
+        SectionTitle4.textContent = language.ru.SectionTitle4;
+        podul.textContent = language.ru.podul;
+        incuscr.textContent= language.ru.incuscr;
+        colacul.textContent = language.ru.colacul;
+
+
+
     }
 }
 
 
 // define language onclick illiteration
-for (i = 0; i <= dataReload.length; i++) {
+for (let i = 0; i <= dataReload.length; i++) {
 
-    const rolang = document.getElementById("ro");
-    const englang = document.getElementById("eng");
-    const rulang = document.getElementById("ru");
+  const rolang = document.getElementById("ro");
+  const englang = document.getElementById("eng");
+  const rulang = document.getElementById("ru");
 
 
-    rolang.onclick = function () {
-        window.location.hash = "#ro";
-        location.reload(true);
+  rolang.onclick = function () {
+      window.location.hash = "#ro";
+      location.reload(true);
 
-    }
-    englang.onclick = function () {
-        window.location.hash = "#eng";
-        location.reload(true);
+  }
+  englang.onclick = function () {
+      window.location.hash = "#eng";
+      location.reload(true);
 
-    }
-    rulang.onclick = function () {
-        window.location.hash = "#ru";
-        location.reload(true);
+  }
+  rulang.onclick = function () {
+      window.location.hash = "#ru";
+      location.reload(true);
 
-    }
+  }
 }
 
 // ======================================================================================
