@@ -1728,4 +1728,7 @@ footer {
   .gall:hover {
     transform: none !important;
   }
+  .mediaText {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
