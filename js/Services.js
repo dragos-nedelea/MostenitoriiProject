@@ -25,12 +25,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // =============================== Firebase import ======================================
 
-// Import the functions you need from the SDKs you need
-// import { initializeApp } from 'firebase/app';
-// import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
 // Your web app's Firebase configuration
 const firebaseConfig = {
     apiKey: "AIzaSyCpeQVFb_9JcVX2QQyPoEeJiZoD_FlM7yE",
@@ -44,9 +38,6 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = firebase.initializeApp(firebaseConfig);
-// const db = getFirestore(app);
-
-// Get a reference to the Firebase database
 const database = app.database();
 
 // =============================== Form submission ======================================
@@ -96,6 +87,96 @@ form.addEventListener('submit', (e) => {
     alert('Form submitted successfully!');
     location.reload(); // refresh the page
 });
+
+// =============================== Price calculation in service form ======================================
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get the necessary elements
+    const dancersSelect = document.getElementById('dancers');
+    const regionSelect = document.getElementById('region');
+    const priceDisplay = document.getElementById('price');
+    const dateInput = document.getElementById('date');
+
+    // Define the price values for each dancer option and region
+    const prices = {
+      dancers: {
+        '2': 100,
+        '4': 200,
+        '6': 300
+      },
+      regions: {
+        'Râșcani': 50,
+        'Bălți': 100,
+        'Drochia': 150
+      }
+    };
+
+    // Calculate and display the price
+    function calculatePrice() {
+      const selectedDancers = dancersSelect.value;
+      const selectedRegion = regionSelect.value;
+      const dancersPrice = prices.dancers[selectedDancers];
+      const regionPrice = prices.regions[selectedRegion];
+      const totalPrice = dancersPrice + regionPrice;
+      priceDisplay.innerHTML = `${totalPrice}`;
+    }
+
+    // Calculate the price whenever the dancer selection or region selection changes
+    dancersSelect.addEventListener('change', calculatePrice);
+    regionSelect.addEventListener('change', calculatePrice);
+
+  // Check if the date is picked in the Firebase database
+  function checkDateAvailability() {
+    const selectedDate = new Date(date.value).toISOString().split('T')[0];
+    const language = window.location.hash.substring(1); // Get the language from the URL hash
+  
+    database.ref('form-submissions').once('value', (snapshot) => {
+      const submissions = snapshot.val();
+  
+      if (submissions) {
+        const isDateBooked = Object.values(submissions).some((submission) => submission.date.includes(selectedDate));
+        if (isDateBooked) {
+          // Date is already booked, display the corresponding text based on the language
+          const bookedText = getBookedText(language); // Assuming you have a function to get the booked text based on language
+          document.getElementById('dateCheck').textContent = bookedText;
+        } else {
+          // Date is available, restore the original message based on the language
+          const originalText = getOriginalText(language); // Assuming you have a function to get the original text based on the language
+          document.getElementById('dateCheck').textContent = originalText;
+        }
+      } else {
+        // No form submissions found
+        document.getElementById('dateCheck').textContent = 'No form submissions found.';
+      }
+    });
+  }
+  
+  // Check the date availability whenever the date input changes
+  date.addEventListener('change', checkDateAvailability);
+  
+  // Function to get the booked text based on the selected language
+  function getBookedText(language) {
+    if (language === 'ro') {
+      return 'Această dată este deja rezervată. Vă rugăm să alegeți o altă dată.';
+    } else if (language === 'ru') {
+      return 'Эта дата уже забронирована. Пожалуйста, выберите другую дату.';
+    } else {
+      return 'This date is already booked. Please choose another date.';
+    }
+  }
+  
+  // Function to get the original text based on the selected language
+  function getOriginalText(language) {
+    if (language === 'ro') {
+      return 'După trimitere, veți fi contactat și data selectată va fi afișată în calendarul nostru.';
+    } else if (language === 'ru') {
+      return 'После отправки вы будете связаны, и выбранная вами дата будет отображаться в нашем календаре.';
+    } else {
+      return 'After submitting, you will be contacted, and your picked date will be displayed in our calendar.';
+    }
+  }
+  
+});
+
 
 // =============================== New Date array (picked dates) ======================================
 
@@ -190,7 +271,6 @@ var language = {
 
         //Form Section
         "Nameform": "Nume:",
-        "formDisc": "După trimitere veți fi contactat, iar data aleasă de dvs. va fi afișată în calendarul nostru.",
         "Pform": "Nr.Telefon:",
         "Dform": "Alegeți numărul dansatorilor",
         "Rform": "Alegeți regiunea:",
@@ -201,6 +281,8 @@ var language = {
         "subtitle3": "Contactează-ne, te putem ajuta cu asta!",
         "SectionTitle3": "Dansatori la evenimente",
         "titleBtn": "Contactează",
+        "priceText": "Preț:",
+        "currency": "Euro",
 
         //Our Calendar Section
         "SectionTitle2": "Calendarul nostru",
@@ -239,7 +321,6 @@ var language = {
 
         //Form Section
         "Nameform": "Имя:",
-        "formDisc": "После отправки с вами свяжутся, и выбранная вами дата будет отображаться в нашем календаре.",
         "Pform": "Номер:",
         "Dform": "Выберите, сколько танцоров:",
         "Rform": "Выберите свой регион:",
@@ -250,6 +331,8 @@ var language = {
         "subtitle3": "Свяжитесь с нами, мы можем вам в этом помочь!",
         "SectionTitle3": "Танцоры на церемониях",
         "titleBtn": "Связаться",
+        "priceText": "Цена:",
+        "currency": "Евро",
 
         //Our Calendar Section
         "SectionTitle2": "Наш календарь",
@@ -293,7 +376,6 @@ if (window.location.hash) {
 
         // Form Section
         Nameform.textContent = language.ro.Nameform;
-        formDisc.textContent = language.ro.formDisc;
         Pform.textContent = language.ro.Pform;
         Dform.textContent = language.ro.Dform;
         Rform.textContent = language.ro.Rform;
@@ -304,6 +386,8 @@ if (window.location.hash) {
         subtitle3.textContent = language.ro.subtitle3;
         SectionTitle3.textContent = language.ro.SectionTitle3;
         titleBtn.textContent = language.ro.titleBtn;
+        priceText.textContent = language.ro.priceText;
+        currency.textContent = language.ro.currency;
 
         //Our Calendar Section
         SectionTitle2.textContent = language.ro.SectionTitle2;
@@ -339,7 +423,6 @@ if (window.location.hash) {
 
         // Form Section
         Nameform.textContent = language.ru.Nameform;
-        formDisc.textContent = language.ru.formDisc;
         Pform.textContent = language.ru.Pform;
         Dform.textContent = language.ru.Dform;
         Rform.textContent = language.ru.Rform;
@@ -350,6 +433,8 @@ if (window.location.hash) {
         subtitle3.textContent = language.ru.subtitle3;
         SectionTitle3.textContent = language.ru.SectionTitle3;
         titleBtn.textContent = language.ru.titleBtn;
+        priceText.textContent = language.ru.priceText;
+        currency.textContent = language.ru.currency;
 
         //Our Calendar Section
         SectionTitle2.textContent = language.ru.SectionTitle2;
